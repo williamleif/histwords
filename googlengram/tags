@@ -1,0 +1,676 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ArgumentParser	cleanwords.py	/^from argparse import ArgumentParser$/;"	i
+CYTHON_ABI	pullscripts/merge.c	28;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	pullscripts/merge.c	58;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	pullscripts/merge.c	61;"	d	file:
+CYTHON_COMPILING_IN_PYPY	pullscripts/merge.c	57;"	d	file:
+CYTHON_COMPILING_IN_PYPY	pullscripts/merge.c	60;"	d	file:
+CYTHON_FORMAT_SSIZE_T	pullscripts/merge.c	67;"	d	file:
+CYTHON_INLINE	pullscripts/merge.c	187;"	d	file:
+CYTHON_INLINE	pullscripts/merge.c	189;"	d	file:
+CYTHON_INLINE	pullscripts/merge.c	191;"	d	file:
+CYTHON_INLINE	pullscripts/merge.c	193;"	d	file:
+CYTHON_NCP_UNUSED	pullscripts/merge.c	283;"	d	file:
+CYTHON_NCP_UNUSED	pullscripts/merge.c	285;"	d	file:
+CYTHON_PEP393_ENABLED	pullscripts/merge.c	101;"	d	file:
+CYTHON_PEP393_ENABLED	pullscripts/merge.c	92;"	d	file:
+CYTHON_REFNANNY	pullscripts/merge.c	456;"	d	file:
+CYTHON_RESTRICT	pullscripts/merge.c	198;"	d	file:
+CYTHON_RESTRICT	pullscripts/merge.c	200;"	d	file:
+CYTHON_RESTRICT	pullscripts/merge.c	202;"	d	file:
+CYTHON_RESTRICT	pullscripts/merge.c	204;"	d	file:
+CYTHON_UNUSED	pullscripts/merge.c	271;"	d	file:
+CYTHON_UNUSED	pullscripts/merge.c	273;"	d	file:
+CYTHON_UNUSED	pullscripts/merge.c	276;"	d	file:
+CYTHON_UNUSED	pullscripts/merge.c	278;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	pullscripts/merge.c	12;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	pullscripts/merge.c	16;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	pullscripts/merge.c	18;"	d	file:
+CYTHON_WITHOUT_ASSERTIONS	pullscripts/merge.c	265;"	d	file:
+CachedFreqDist	freqstats.py	/^from misc.fastfreqdist import CachedFreqDist$/;"	i
+DECREF	pullscripts/merge.c	/^    void (*DECREF)(void*, PyObject*, int);$/;"	m	struct:__anon2	file:
+DL_EXPORT	pullscripts/merge.c	48;"	d	file:
+DL_IMPORT	pullscripts/merge.c	45;"	d	file:
+END_YEAR	freqstats_ind.py	/^END_YEAR = 2000$/;"	v
+END_YEAR	samplesizes.py	/^END_YEAR = 2000$/;"	v
+EXCLUDE_PATTERN	pullscripts/downloadandsplit.py	/^EXCLUDE_PATTERN = re.compile('.*_[A-Z]+[_,\\s].*')$/;"	v
+EXCLUDE_PATTERN	pullscripts/gramgrab.py	/^EXCLUDE_PATTERN = re.compile('.*_[A-Z]+[_,\\s].*')$/;"	v
+Empty	freqperyear.py	/^from Queue import Empty $/;"	i
+Empty	freqstats.py	/^from Queue import Empty$/;"	i
+Empty	makedecades.py	/^from Queue import Empty$/;"	i
+Empty	pullscripts/countmerge.py	/^from Queue import Empty $/;"	i
+Explicit	freqstats.py	/^from vecanalysis.representations.explicit import Explicit$/;"	i
+Explicit	makedecades.py	/^from vecanalysis.representations.explicit import Explicit$/;"	i
+FinishContext	pullscripts/merge.c	/^    void (*FinishContext)(void**);$/;"	m	struct:__anon2	file:
+GIVEREF	pullscripts/merge.c	/^    void (*GIVEREF)(void*, PyObject*, int);$/;"	m	struct:__anon2	file:
+GOTREF	pullscripts/merge.c	/^    void (*GOTREF)(void*, PyObject*, int);$/;"	m	struct:__anon2	file:
+INCREF	pullscripts/merge.c	/^    void (*INCREF)(void*, PyObject*, int);$/;"	m	struct:__anon2	file:
+INDEX_FILE	samplesizes.py	/^INDEX_FILE = "\/dfs\/scratch0\/googlengrams\/2012-eng-fic\/5grams\/merged_index.pkl"$/;"	v
+LINE_SPLIT	pullscripts/downloadandsplit.py	/^LINE_SPLIT = 100000000$/;"	v
+LINE_SPLIT	pullscripts/gramgrab.py	/^LINE_SPLIT = 100000000$/;"	v
+Lock	freqstats_ind.py	/^from multiprocessing import Process, Lock$/;"	i
+Lock	pullscripts/merge.pyx	/^from multiprocessing import Process, Lock$/;"	i
+MIN_FREQ	cleanwords.py	/^MIN_FREQ = 10.0**(-8.0)$/;"	v
+POS	pullscripts/downloadandsplit.py	/^POS = re.compile('.*_[A-Z]+\\s.*')$/;"	v
+POS	pullscripts/gramgrab.py	/^POS = re.compile('.*_[A-Z]+\\s.*')$/;"	v
+POS	pullscripts/posgrab.py	/^POS = re.compile('[^_]+_[A-Z]+')$/;"	v
+PUNCTUATION	cleanwords.py	/^PUNCTUATION = set(string.punctuation)$/;"	v
+PY_LONG_LONG	pullscripts/merge.c	51;"	d	file:
+PY_SSIZE_T_CLEAN	pullscripts/merge.c	9;"	d	file:
+Process	freqperyear.py	/^from multiprocessing import Process, Queue$/;"	i
+Process	freqstats.py	/^from multiprocessing import Process, Queue$/;"	i
+Process	freqstats_ind.py	/^from multiprocessing import Process, Lock$/;"	i
+Process	makedecades.py	/^from multiprocessing import Process, Queue$/;"	i
+Process	pullscripts/countmerge.py	/^from multiprocessing import Process, Queue$/;"	i
+Process	pullscripts/downloadandsplit.py	/^from multiprocessing import Process, Queue$/;"	i
+Process	pullscripts/gramgrab.py	/^from multiprocessing import Process, Queue$/;"	i
+Process	pullscripts/merge.pyx	/^from multiprocessing import Process, Lock$/;"	i
+PyBaseString_Type	pullscripts/merge.c	130;"	d	file:
+PyBoolObject	pullscripts/merge.c	165;"	d	file:
+PyIntObject	pullscripts/merge.c	148;"	d	file:
+PyInt_AS_LONG	pullscripts/merge.c	158;"	d	file:
+PyInt_AsLong	pullscripts/merge.c	157;"	d	file:
+PyInt_AsSsize_t	pullscripts/merge.c	159;"	d	file:
+PyInt_AsUnsignedLongLongMask	pullscripts/merge.c	161;"	d	file:
+PyInt_AsUnsignedLongMask	pullscripts/merge.c	160;"	d	file:
+PyInt_Check	pullscripts/merge.c	150;"	d	file:
+PyInt_CheckExact	pullscripts/merge.c	151;"	d	file:
+PyInt_FromLong	pullscripts/merge.c	154;"	d	file:
+PyInt_FromSize_t	pullscripts/merge.c	155;"	d	file:
+PyInt_FromSsize_t	pullscripts/merge.c	156;"	d	file:
+PyInt_FromString	pullscripts/merge.c	152;"	d	file:
+PyInt_FromUnicode	pullscripts/merge.c	153;"	d	file:
+PyInt_Type	pullscripts/merge.c	149;"	d	file:
+PyNumber_Int	pullscripts/merge.c	162;"	d	file:
+PySet_CheckExact	pullscripts/merge.c	144;"	d	file:
+PyStringObject	pullscripts/merge.c	131;"	d	file:
+PyString_Check	pullscripts/merge.c	133;"	d	file:
+PyString_CheckExact	pullscripts/merge.c	134;"	d	file:
+PyString_Type	pullscripts/merge.c	132;"	d	file:
+PyUnicode_Contains	pullscripts/merge.c	120;"	d	file:
+PyUnicode_InternFromString	pullscripts/merge.c	169;"	d	file:
+Py_HUGE_VAL	pullscripts/merge.c	54;"	d	file:
+Py_OptimizeFlag	pullscripts/merge.c	64;"	d	file:
+Py_TPFLAGS_CHECKTYPES	pullscripts/merge.c	80;"	d	file:
+Py_TPFLAGS_HAVE_FINALIZE	pullscripts/merge.c	89;"	d	file:
+Py_TPFLAGS_HAVE_INDEX	pullscripts/merge.c	83;"	d	file:
+Py_TPFLAGS_HAVE_NEWBUFFER	pullscripts/merge.c	86;"	d	file:
+Py_hash_t	pullscripts/merge.c	/^  typedef long Py_hash_t;$/;"	t	file:
+Queue	freqperyear.py	/^from multiprocessing import Process, Queue$/;"	i
+Queue	freqstats.py	/^from multiprocessing import Process, Queue$/;"	i
+Queue	makedecades.py	/^from multiprocessing import Process, Queue$/;"	i
+Queue	pullscripts/countmerge.py	/^from multiprocessing import Process, Queue$/;"	i
+Queue	pullscripts/downloadandsplit.py	/^from multiprocessing import Process, Queue$/;"	i
+Queue	pullscripts/gramgrab.py	/^from multiprocessing import Process, Queue$/;"	i
+START_YEAR	freqstats_ind.py	/^START_YEAR = 1900$/;"	v
+START_YEAR	samplesizes.py	/^START_YEAR = 1900$/;"	v
+SetupContext	pullscripts/merge.c	/^    void* (*SetupContext)(const char*, int, const char*);$/;"	m	struct:__anon2	file:
+TYPE	pullscripts/downloadandsplit.py	/^TYPE = '5gram'$/;"	v
+TYPE	pullscripts/freqgrab.py	/^TYPE = '1gram'$/;"	v
+TYPE	pullscripts/gramgrab.py	/^TYPE = '5gram'$/;"	v
+TYPE	pullscripts/posgrab.py	/^TYPE = '1gram'$/;"	v
+VERSION	pullscripts/downloadandsplit.py	/^VERSION = '20120701'$/;"	v
+VERSION	pullscripts/freqgrab.py	/^VERSION = '20120701'$/;"	v
+VERSION	pullscripts/gramgrab.py	/^VERSION = '20120701'$/;"	v
+VERSION	pullscripts/posgrab.py	/^VERSION = '20120701'$/;"	v
+YEARS	pullscripts/countmerge.py	/^YEARS = range(1900, 2001)$/;"	v
+YEARS	pullscripts/freqgrab.py	/^YEARS = range(1800, 2001)$/;"	v
+YEARS	pullscripts/indexmerge.py	/^YEARS = range(1800, 2001)$/;"	v
+_USE_MATH_DEFINES	pullscripts/merge.c	255;"	d	file:
+__PYX_BUILD_PY_SSIZE_T	pullscripts/merge.c	66;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING	pullscripts/merge.c	/^static char* __PYX_DEFAULT_STRING_ENCODING;$/;"	v	file:
+__PYX_DEFAULT_STRING_ENCODING	pullscripts/merge.c	293;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_ASCII	pullscripts/merge.c	291;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT	pullscripts/merge.c	292;"	d	file:
+__PYX_EXTERN_C	pullscripts/merge.c	248;"	d	file:
+__PYX_EXTERN_C	pullscripts/merge.c	250;"	d	file:
+__PYX_HAVE_API__googlengram__pullscripts__merge	pullscripts/merge.c	259;"	d	file:
+__PYX_HAVE__googlengram__pullscripts__merge	pullscripts/merge.c	258;"	d	file:
+__PYX_NAN	pullscripts/merge.c	/^static CYTHON_INLINE float __PYX_NAN() {$/;"	f	file:
+__PYX_NAN	pullscripts/merge.c	208;"	d	file:
+__PYX_VERIFY_RETURN_INT	pullscripts/merge.c	4242;"	d	file:
+__Pyx_AddTraceback	pullscripts/merge.c	/^static void __Pyx_AddTraceback(const char *funcname, int c_line,$/;"	f	file:
+__Pyx_BUILTIN_MODULE_NAME	pullscripts/merge.c	69;"	d	file:
+__Pyx_BUILTIN_MODULE_NAME	pullscripts/merge.c	74;"	d	file:
+__Pyx_CLEAR	pullscripts/merge.c	514;"	d	file:
+__Pyx_CodeObjectCache	pullscripts/merge.c	/^struct __Pyx_CodeObjectCache {$/;"	s	file:
+__Pyx_CodeObjectCacheEntry	pullscripts/merge.c	/^} __Pyx_CodeObjectCacheEntry;$/;"	t	typeref:struct:__anon3	file:
+__Pyx_CreateCodeObjectForTraceback	pullscripts/merge.c	/^static PyCodeObject* __Pyx_CreateCodeObjectForTraceback($/;"	f	file:
+__Pyx_DECREF	pullscripts/merge.c	486;"	d	file:
+__Pyx_DECREF	pullscripts/merge.c	498;"	d	file:
+__Pyx_DECREF_SET	pullscripts/merge.c	510;"	d	file:
+__Pyx_DefaultClassType	pullscripts/merge.c	72;"	d	file:
+__Pyx_DefaultClassType	pullscripts/merge.c	77;"	d	file:
+__Pyx_ErrFetch	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_ErrFetch(PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx_ErrRestore	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_ErrRestore(PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_ExceptionReset	pullscripts/merge.c	/^static void __Pyx_ExceptionReset(PyObject *type, PyObject *value, PyObject *tb) {$/;"	f	file:
+__Pyx_ExceptionSave	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_ExceptionSave(PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx_GIVEREF	pullscripts/merge.c	488;"	d	file:
+__Pyx_GIVEREF	pullscripts/merge.c	500;"	d	file:
+__Pyx_GOTREF	pullscripts/merge.c	487;"	d	file:
+__Pyx_GOTREF	pullscripts/merge.c	499;"	d	file:
+__Pyx_GetBuiltinName	pullscripts/merge.c	/^static PyObject *__Pyx_GetBuiltinName(PyObject *name) {$/;"	f	file:
+__Pyx_GetException	pullscripts/merge.c	/^static int __Pyx_GetException(PyObject **type, PyObject **value, PyObject **tb) {$/;"	f	file:
+__Pyx_GetItemInt	pullscripts/merge.c	625;"	d	file:
+__Pyx_GetItemInt_Fast	pullscripts/merge.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Fast(PyObject *o, Py_ssize_t i, int is_list,$/;"	f	file:
+__Pyx_GetItemInt_Generic	pullscripts/merge.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Generic(PyObject *o, PyObject* j) {$/;"	f	file:
+__Pyx_GetItemInt_List	pullscripts/merge.c	630;"	d	file:
+__Pyx_GetItemInt_List_Fast	pullscripts/merge.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_List_Fast(PyObject *o, Py_ssize_t i,$/;"	f	file:
+__Pyx_GetItemInt_Tuple	pullscripts/merge.c	636;"	d	file:
+__Pyx_GetItemInt_Tuple_Fast	pullscripts/merge.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Tuple_Fast(PyObject *o, Py_ssize_t i,$/;"	f	file:
+__Pyx_GetModuleGlobalName	pullscripts/merge.c	/^static CYTHON_INLINE PyObject *__Pyx_GetModuleGlobalName(PyObject *name) {$/;"	f	file:
+__Pyx_GetStdout	pullscripts/merge.c	/^static PyObject *__Pyx_GetStdout(void) {$/;"	f	file:
+__Pyx_INCREF	pullscripts/merge.c	485;"	d	file:
+__Pyx_INCREF	pullscripts/merge.c	497;"	d	file:
+__Pyx_Import	pullscripts/merge.c	/^static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level) {$/;"	f	file:
+__Pyx_ImportFrom	pullscripts/merge.c	/^static PyObject* __Pyx_ImportFrom(PyObject* module, PyObject* name) {$/;"	f	file:
+__Pyx_InitCachedBuiltins	pullscripts/merge.c	/^static int __Pyx_InitCachedBuiltins(void) {$/;"	f	file:
+__Pyx_InitCachedConstants	pullscripts/merge.c	/^static int __Pyx_InitCachedConstants(void) {$/;"	f	file:
+__Pyx_InitGlobals	pullscripts/merge.c	/^static int __Pyx_InitGlobals(void) {$/;"	f	file:
+__Pyx_InitStrings	pullscripts/merge.c	/^static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	file:
+__Pyx_IterFinish	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_IterFinish(void) {$/;"	f	file:
+__Pyx_IternextUnpackEndCheck	pullscripts/merge.c	/^static int __Pyx_IternextUnpackEndCheck(PyObject *retval, Py_ssize_t expected) {$/;"	f	file:
+__Pyx_ListComp_Append	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_ListComp_Append(PyObject* list, PyObject* x) {$/;"	f	file:
+__Pyx_ListComp_Append	pullscripts/merge.c	659;"	d	file:
+__Pyx_MODULE_NAME	pullscripts/merge.c	701;"	d	file:
+__Pyx_Owned_Py_None	pullscripts/merge.c	340;"	d	file:
+__Pyx_ParseOptionalKeywords	pullscripts/merge.c	/^static int __Pyx_ParseOptionalKeywords($/;"	f	file:
+__Pyx_Print	pullscripts/merge.c	/^static int __Pyx_Print(PyObject* f, PyObject *arg_tuple, int newline) {$/;"	f	file:
+__Pyx_Print	pullscripts/merge.c	/^static int __Pyx_Print(PyObject* stream, PyObject *arg_tuple, int newline) {$/;"	f	file:
+__Pyx_PyBaseString_Check	pullscripts/merge.c	137;"	d	file:
+__Pyx_PyBaseString_Check	pullscripts/merge.c	140;"	d	file:
+__Pyx_PyBaseString_CheckExact	pullscripts/merge.c	138;"	d	file:
+__Pyx_PyBaseString_CheckExact	pullscripts/merge.c	141;"	d	file:
+__Pyx_PyBool_FromLong	pullscripts/merge.c	341;"	d	file:
+__Pyx_PyByteArray_FromCString	pullscripts/merge.c	324;"	d	file:
+__Pyx_PyByteArray_FromString	pullscripts/merge.c	308;"	d	file:
+__Pyx_PyByteArray_FromStringAndSize	pullscripts/merge.c	309;"	d	file:
+__Pyx_PyBytes_FromCString	pullscripts/merge.c	323;"	d	file:
+__Pyx_PyBytes_FromString	pullscripts/merge.c	310;"	d	file:
+__Pyx_PyBytes_FromStringAndSize	pullscripts/merge.c	311;"	d	file:
+__Pyx_PyCode_New	pullscripts/merge.c	70;"	d	file:
+__Pyx_PyCode_New	pullscripts/merge.c	75;"	d	file:
+__Pyx_PyFrozenSet_Size	pullscripts/merge.c	112;"	d	file:
+__Pyx_PyFrozenSet_Size	pullscripts/merge.c	117;"	d	file:
+__Pyx_PyIndex_AsSsize_t	pullscripts/merge.c	/^static CYTHON_INLINE Py_ssize_t __Pyx_PyIndex_AsSsize_t(PyObject* b) {$/;"	f	file:
+__Pyx_PyInt_AsHash_t	pullscripts/merge.c	175;"	d	file:
+__Pyx_PyInt_AsHash_t	pullscripts/merge.c	178;"	d	file:
+__Pyx_PyInt_As_int	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {$/;"	f	file:
+__Pyx_PyInt_As_long	pullscripts/merge.c	/^static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {$/;"	f	file:
+__Pyx_PyInt_FromHash_t	pullscripts/merge.c	174;"	d	file:
+__Pyx_PyInt_FromHash_t	pullscripts/merge.c	177;"	d	file:
+__Pyx_PyInt_FromSize_t	pullscripts/merge.c	/^static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {$/;"	f	file:
+__Pyx_PyInt_From_long	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {$/;"	f	file:
+__Pyx_PyMethod_New	pullscripts/merge.c	181;"	d	file:
+__Pyx_PyMethod_New	pullscripts/merge.c	183;"	d	file:
+__Pyx_PyNumber_Divide	pullscripts/merge.c	239;"	d	file:
+__Pyx_PyNumber_Divide	pullscripts/merge.c	242;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	pullscripts/merge.c	240;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	pullscripts/merge.c	243;"	d	file:
+__Pyx_PyNumber_Int	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyNumber_Int(PyObject* x) {$/;"	f	file:
+__Pyx_PyObject_AsSString	pullscripts/merge.c	320;"	d	file:
+__Pyx_PyObject_AsString	pullscripts/merge.c	/^static CYTHON_INLINE char* __Pyx_PyObject_AsString(PyObject* o) {$/;"	f	file:
+__Pyx_PyObject_AsStringAndSize	pullscripts/merge.c	/^static CYTHON_INLINE char* __Pyx_PyObject_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	file:
+__Pyx_PyObject_AsUString	pullscripts/merge.c	321;"	d	file:
+__Pyx_PyObject_Call	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw) {$/;"	f	file:
+__Pyx_PyObject_Call	pullscripts/merge.c	546;"	d	file:
+__Pyx_PyObject_CallMethO	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject *arg) {$/;"	f	file:
+__Pyx_PyObject_CallMethod0	pullscripts/merge.c	/^static PyObject* __Pyx_PyObject_CallMethod0(PyObject* obj, PyObject* method_name) {$/;"	f	file:
+__Pyx_PyObject_CallNoArg	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func) {$/;"	f	file:
+__Pyx_PyObject_CallNoArg	pullscripts/merge.c	558;"	d	file:
+__Pyx_PyObject_CallOneArg	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {$/;"	f	file:
+__Pyx_PyObject_FromCString	pullscripts/merge.c	322;"	d	file:
+__Pyx_PyObject_FromString	pullscripts/merge.c	294;"	d	file:
+__Pyx_PyObject_FromStringAndSize	pullscripts/merge.c	295;"	d	file:
+__Pyx_PyObject_GetAttrStr	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_GetAttrStr(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_GetAttrStr	pullscripts/merge.c	529;"	d	file:
+__Pyx_PyObject_IsTrue	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_PyObject_IsTrue(PyObject* x) {$/;"	f	file:
+__Pyx_PyObject_LookupSpecial	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_LookupSpecial(PyObject* obj, PyObject* attr_name) {$/;"	f	file:
+__Pyx_PyObject_LookupSpecial	pullscripts/merge.c	590;"	d	file:
+__Pyx_PySequence_Contains	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_PySequence_Contains(PyObject* item, PyObject* seq, int eq) {$/;"	f	file:
+__Pyx_PyStr_FromCString	pullscripts/merge.c	325;"	d	file:
+__Pyx_PyStr_FromString	pullscripts/merge.c	314;"	d	file:
+__Pyx_PyStr_FromString	pullscripts/merge.c	317;"	d	file:
+__Pyx_PyStr_FromStringAndSize	pullscripts/merge.c	315;"	d	file:
+__Pyx_PyStr_FromStringAndSize	pullscripts/merge.c	318;"	d	file:
+__Pyx_PyString_Format	pullscripts/merge.c	125;"	d	file:
+__Pyx_PyString_Format	pullscripts/merge.c	127;"	d	file:
+__Pyx_PyString_FormatSafe	pullscripts/merge.c	122;"	d	file:
+__Pyx_PyUnicode_AsUnicode	pullscripts/merge.c	339;"	d	file:
+__Pyx_PyUnicode_Concat	pullscripts/merge.c	110;"	d	file:
+__Pyx_PyUnicode_Concat	pullscripts/merge.c	114;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	pullscripts/merge.c	111;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	pullscripts/merge.c	115;"	d	file:
+__Pyx_PyUnicode_DATA	pullscripts/merge.c	106;"	d	file:
+__Pyx_PyUnicode_DATA	pullscripts/merge.c	98;"	d	file:
+__Pyx_PyUnicode_FormatSafe	pullscripts/merge.c	123;"	d	file:
+__Pyx_PyUnicode_FromCString	pullscripts/merge.c	326;"	d	file:
+__Pyx_PyUnicode_FromString	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_PyUnicode_FromString(const char* c_str) {$/;"	f	file:
+__Pyx_PyUnicode_FromStringAndSize	pullscripts/merge.c	399;"	d	file:
+__Pyx_PyUnicode_FromStringAndSize	pullscripts/merge.c	401;"	d	file:
+__Pyx_PyUnicode_FromUnicode	pullscripts/merge.c	337;"	d	file:
+__Pyx_PyUnicode_FromUnicodeAndLength	pullscripts/merge.c	338;"	d	file:
+__Pyx_PyUnicode_GET_LENGTH	pullscripts/merge.c	103;"	d	file:
+__Pyx_PyUnicode_GET_LENGTH	pullscripts/merge.c	95;"	d	file:
+__Pyx_PyUnicode_KIND	pullscripts/merge.c	105;"	d	file:
+__Pyx_PyUnicode_KIND	pullscripts/merge.c	97;"	d	file:
+__Pyx_PyUnicode_READ	pullscripts/merge.c	107;"	d	file:
+__Pyx_PyUnicode_READ	pullscripts/merge.c	99;"	d	file:
+__Pyx_PyUnicode_READY	pullscripts/merge.c	102;"	d	file:
+__Pyx_PyUnicode_READY	pullscripts/merge.c	93;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	pullscripts/merge.c	104;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	pullscripts/merge.c	96;"	d	file:
+__Pyx_Py_UNICODE_strlen	pullscripts/merge.c	/^static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u)$/;"	f	file:
+__Pyx_Py_UNICODE_strlen	pullscripts/merge.c	335;"	d	file:
+__Pyx_RaiseArgtupleInvalid	pullscripts/merge.c	/^static void __Pyx_RaiseArgtupleInvalid($/;"	f	file:
+__Pyx_RaiseDoubleKeywordsError	pullscripts/merge.c	/^static void __Pyx_RaiseDoubleKeywordsError($/;"	f	file:
+__Pyx_RaiseNeedMoreValuesError	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_RaiseNeedMoreValuesError(Py_ssize_t index) {$/;"	f	file:
+__Pyx_RaiseNoneNotIterableError	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_RaiseNoneNotIterableError(void) {$/;"	f	file:
+__Pyx_RaiseTooManyValuesError	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_RaiseTooManyValuesError(Py_ssize_t expected) {$/;"	f	file:
+__Pyx_RaiseUnboundLocalError	pullscripts/merge.c	/^static CYTHON_INLINE void __Pyx_RaiseUnboundLocalError(const char *varname) {$/;"	f	file:
+__Pyx_RefNanny	pullscripts/merge.c	/^  static __Pyx_RefNannyAPIStruct *__Pyx_RefNanny = NULL;$/;"	v	file:
+__Pyx_RefNannyAPIStruct	pullscripts/merge.c	/^  } __Pyx_RefNannyAPIStruct;$/;"	t	typeref:struct:__anon2	file:
+__Pyx_RefNannyDeclarations	pullscripts/merge.c	469;"	d	file:
+__Pyx_RefNannyDeclarations	pullscripts/merge.c	494;"	d	file:
+__Pyx_RefNannyFinishContext	pullscripts/merge.c	483;"	d	file:
+__Pyx_RefNannyFinishContext	pullscripts/merge.c	496;"	d	file:
+__Pyx_RefNannyImportAPI	pullscripts/merge.c	/^static __Pyx_RefNannyAPIStruct *__Pyx_RefNannyImportAPI(const char *modname) {$/;"	f	file:
+__Pyx_RefNannySetupContext	pullscripts/merge.c	471;"	d	file:
+__Pyx_RefNannySetupContext	pullscripts/merge.c	480;"	d	file:
+__Pyx_RefNannySetupContext	pullscripts/merge.c	495;"	d	file:
+__Pyx_StringTabEntry	pullscripts/merge.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	t	typeref:struct:__anon1	file:
+__Pyx_TypeCheck	pullscripts/merge.c	146;"	d	file:
+__Pyx_UnpackTupleError	pullscripts/merge.c	/^static void __Pyx_UnpackTupleError(PyObject *t, Py_ssize_t index) {$/;"	f	file:
+__Pyx_XCLEAR	pullscripts/merge.c	515;"	d	file:
+__Pyx_XDECREF	pullscripts/merge.c	490;"	d	file:
+__Pyx_XDECREF	pullscripts/merge.c	502;"	d	file:
+__Pyx_XDECREF_SET	pullscripts/merge.c	506;"	d	file:
+__Pyx_XGIVEREF	pullscripts/merge.c	492;"	d	file:
+__Pyx_XGIVEREF	pullscripts/merge.c	504;"	d	file:
+__Pyx_XGOTREF	pullscripts/merge.c	491;"	d	file:
+__Pyx_XGOTREF	pullscripts/merge.c	503;"	d	file:
+__Pyx_XINCREF	pullscripts/merge.c	489;"	d	file:
+__Pyx_XINCREF	pullscripts/merge.c	501;"	d	file:
+__Pyx__PyObject_CallOneArg	pullscripts/merge.c	/^static PyObject* __Pyx__PyObject_CallOneArg(PyObject *func, PyObject *arg) {$/;"	f	file:
+__Pyx_call_destructor	pullscripts/merge.c	/^void __Pyx_call_destructor(T* x) {$/;"	f
+__Pyx_check_binary_version	pullscripts/merge.c	/^static int __Pyx_check_binary_version(void) {$/;"	f	file:
+__Pyx_dict_iter_next	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_dict_iter_next($/;"	f	file:
+__Pyx_dict_iterator	pullscripts/merge.c	/^static CYTHON_INLINE PyObject* __Pyx_dict_iterator(PyObject* iterable, int is_dict, PyObject* method_name,$/;"	f	file:
+__Pyx_fits_Py_ssize_t	pullscripts/merge.c	296;"	d	file:
+__Pyx_init_sys_getdefaultencoding_params	pullscripts/merge.c	/^static int __Pyx_init_sys_getdefaultencoding_params(void) {$/;"	f	file:
+__Pyx_sys_getdefaultencoding_not_ascii	pullscripts/merge.c	/^static int __Pyx_sys_getdefaultencoding_not_ascii;$/;"	v	file:
+__Pyx_unpack_tuple2	pullscripts/merge.c	/^static CYTHON_INLINE int __Pyx_unpack_tuple2(PyObject* tuple, PyObject** pvalue1, PyObject** pvalue2,$/;"	f	file:
+__Pyx_void_to_None	pullscripts/merge.c	219;"	d	file:
+__cdecl	pullscripts/merge.c	38;"	d	file:
+__fastcall	pullscripts/merge.c	41;"	d	file:
+__pyx_PyFloat_AsDouble	pullscripts/merge.c	347;"	d	file:
+__pyx_PyFloat_AsDouble	pullscripts/merge.c	349;"	d	file:
+__pyx_PyFloat_AsFloat	pullscripts/merge.c	351;"	d	file:
+__pyx_b	pullscripts/merge.c	/^static PyObject *__pyx_b;$/;"	v	file:
+__pyx_bisect_code_objects	pullscripts/merge.c	/^static int __pyx_bisect_code_objects(__Pyx_CodeObjectCacheEntry* entries, int count, int code_line) {$/;"	f	file:
+__pyx_builtin_open	pullscripts/merge.c	/^static PyObject *__pyx_builtin_open;$/;"	v	file:
+__pyx_builtin_range	pullscripts/merge.c	/^static PyObject *__pyx_builtin_range;$/;"	v	file:
+__pyx_cfilenm	pullscripts/merge.c	/^static const char * __pyx_cfilenm= __FILE__;$/;"	v	file:
+__pyx_clineno	pullscripts/merge.c	/^static int __pyx_clineno = 0;$/;"	v	file:
+__pyx_code_cache	pullscripts/merge.c	/^static struct __Pyx_CodeObjectCache __pyx_code_cache = {0,0,NULL};$/;"	v	typeref:struct:__Pyx_CodeObjectCache	file:
+__pyx_codeobj__6	pullscripts/merge.c	/^static PyObject *__pyx_codeobj__6;$/;"	v	file:
+__pyx_codeobj__8	pullscripts/merge.c	/^static PyObject *__pyx_codeobj__8;$/;"	v	file:
+__pyx_d	pullscripts/merge.c	/^static PyObject *__pyx_d;$/;"	v	file:
+__pyx_empty_bytes	pullscripts/merge.c	/^static PyObject *__pyx_empty_bytes;$/;"	v	file:
+__pyx_empty_tuple	pullscripts/merge.c	/^static PyObject *__pyx_empty_tuple;$/;"	v	file:
+__pyx_f	pullscripts/merge.c	/^static const char *__pyx_f[] = {$/;"	v	file:
+__pyx_filename	pullscripts/merge.c	/^static const char *__pyx_filename;$/;"	v	file:
+__pyx_find_code_object	pullscripts/merge.c	/^static PyCodeObject *__pyx_find_code_object(int code_line) {$/;"	f	file:
+__pyx_insert_code_object	pullscripts/merge.c	/^static void __pyx_insert_code_object(int code_line, PyCodeObject* code_object) {$/;"	f	file:
+__pyx_k_	pullscripts/merge.c	/^static char __pyx_k_[] = "";$/;"	v	file:
+__pyx_k_Finished	pullscripts/merge.c	/^static char __pyx_k_Finished[] = "Finished";$/;"	v	file:
+__pyx_k_Lock	pullscripts/merge.c	/^static char __pyx_k_Lock[] = "Lock";$/;"	v	file:
+__pyx_k_Merging_counts_for_year	pullscripts/merge.c	/^static char __pyx_k_Merging_counts_for_year[] = "Merging counts for year";$/;"	v	file:
+__pyx_k_OrderedDict	pullscripts/merge.c	/^static char __pyx_k_OrderedDict[] = "OrderedDict";$/;"	v	file:
+__pyx_k_Process	pullscripts/merge.c	/^static char __pyx_k_Process[] = "Process";$/;"	v	file:
+__pyx_k_Start_loop	pullscripts/merge.c	/^static char __pyx_k_Start_loop[] = "Start loop";$/;"	v	file:
+__pyx_k_Writing_counts_for_year	pullscripts/merge.c	/^static char __pyx_k_Writing_counts_for_year[] = "Writing counts for year";$/;"	v	file:
+__pyx_k__4	pullscripts/merge.c	/^static char __pyx_k__4[] = "\/";$/;"	v	file:
+__pyx_k_acquire	pullscripts/merge.c	/^static char __pyx_k_acquire[] = "acquire";$/;"	v	file:
+__pyx_k_afs_cs_stanford_edu_u_wleif_lan	pullscripts/merge.c	/^static char __pyx_k_afs_cs_stanford_edu_u_wleif_lan[] = "\/afs\/cs.stanford.edu\/u\/wleif\/langchange_rev\/googlengram\/pullscripts\/merge.pyx";$/;"	v	file:
+__pyx_k_args	pullscripts/merge.c	/^static char __pyx_k_args[] = "args";$/;"	v	file:
+__pyx_k_bin	pullscripts/merge.c	/^static char __pyx_k_bin[] = ".bin";$/;"	v	file:
+__pyx_k_c_word	pullscripts/merge.c	/^static char __pyx_k_c_word[] = "c_word";$/;"	v	file:
+__pyx_k_chunk_counts	pullscripts/merge.c	/^static char __pyx_k_chunk_counts[] = "chunk_counts";$/;"	v	file:
+__pyx_k_chunk_index	pullscripts/merge.c	/^static char __pyx_k_chunk_index[] = "chunk_index";$/;"	v	file:
+__pyx_k_chunk_name	pullscripts/merge.c	/^static char __pyx_k_chunk_name[] = "chunk_name";$/;"	v	file:
+__pyx_k_chunk_num	pullscripts/merge.c	/^static char __pyx_k_chunk_num[] = "chunk_num";$/;"	v	file:
+__pyx_k_close	pullscripts/merge.c	/^static char __pyx_k_close[] = "close";$/;"	v	file:
+__pyx_k_collections	pullscripts/merge.c	/^static char __pyx_k_collections[] = "collections";$/;"	v	file:
+__pyx_k_cooccurrence	pullscripts/merge.c	/^static char __pyx_k_cooccurrence[] = "cooccurrence";$/;"	v	file:
+__pyx_k_count	pullscripts/merge.c	/^static char __pyx_k_count[] = "count";$/;"	v	file:
+__pyx_k_defaultdict	pullscripts/merge.c	/^static char __pyx_k_defaultdict[] = "defaultdict";$/;"	v	file:
+__pyx_k_dirs	pullscripts/merge.c	/^static char __pyx_k_dirs[] = "dirs";$/;"	v	file:
+__pyx_k_end	pullscripts/merge.c	/^static char __pyx_k_end[] = "end";$/;"	v	file:
+__pyx_k_enter	pullscripts/merge.c	/^static char __pyx_k_enter[] = "__enter__";$/;"	v	file:
+__pyx_k_exit	pullscripts/merge.c	/^static char __pyx_k_exit[] = "__exit__";$/;"	v	file:
+__pyx_k_export_mats_from_dicts	pullscripts/merge.c	/^static char __pyx_k_export_mats_from_dicts[] = "export_mats_from_dicts";$/;"	v	file:
+__pyx_k_file	pullscripts/merge.c	/^static char __pyx_k_file[] = "file";$/;"	v	file:
+__pyx_k_fname	pullscripts/merge.c	/^static char __pyx_k_fname[] = "fname";$/;"	v	file:
+__pyx_k_fp	pullscripts/merge.c	/^static char __pyx_k_fp[] = "fp";$/;"	v	file:
+__pyx_k_full_counts	pullscripts/merge.c	/^static char __pyx_k_full_counts[] = "full_counts";$/;"	v	file:
+__pyx_k_googlengram_pullscripts_merge	pullscripts/merge.c	/^static char __pyx_k_googlengram_pullscripts_merge[] = "googlengram.pullscripts.merge";$/;"	v	file:
+__pyx_k_i	pullscripts/merge.c	/^static char __pyx_k_i[] = "i";$/;"	v	file:
+__pyx_k_i_word	pullscripts/merge.c	/^static char __pyx_k_i_word[] = "i_word";$/;"	v	file:
+__pyx_k_import	pullscripts/merge.c	/^static char __pyx_k_import[] = "__import__";$/;"	v	file:
+__pyx_k_in_dir	pullscripts/merge.c	/^static char __pyx_k_in_dir[] = "in_dir";$/;"	v	file:
+__pyx_k_index_pkl	pullscripts/merge.c	/^static char __pyx_k_index_pkl[] = "\/index.pkl";$/;"	v	file:
+__pyx_k_index_pkl_2	pullscripts/merge.c	/^static char __pyx_k_index_pkl_2[] = "-index.pkl";$/;"	v	file:
+__pyx_k_indexing	pullscripts/merge.c	/^static char __pyx_k_indexing[] = "indexing";$/;"	v	file:
+__pyx_k_ioutils	pullscripts/merge.c	/^static char __pyx_k_ioutils[] = "ioutils";$/;"	v	file:
+__pyx_k_isfile	pullscripts/merge.c	/^static char __pyx_k_isfile[] = "isfile";$/;"	v	file:
+__pyx_k_iteritems	pullscripts/merge.c	/^static char __pyx_k_iteritems[] = "iteritems";$/;"	v	file:
+__pyx_k_join	pullscripts/merge.c	/^static char __pyx_k_join[] = "join";$/;"	v	file:
+__pyx_k_list_pkl	pullscripts/merge.c	/^static char __pyx_k_list_pkl[] = "-list.pkl";$/;"	v	file:
+__pyx_k_listdir	pullscripts/merge.c	/^static char __pyx_k_listdir[] = "listdir";$/;"	v	file:
+__pyx_k_load_pickle	pullscripts/merge.c	/^static char __pyx_k_load_pickle[] = "load_pickle";$/;"	v	file:
+__pyx_k_lock	pullscripts/merge.c	/^static char __pyx_k_lock[] = "lock";$/;"	v	file:
+__pyx_k_main	pullscripts/merge.c	/^static char __pyx_k_main[] = "main";$/;"	v	file:
+__pyx_k_main_2	pullscripts/merge.c	/^static char __pyx_k_main_2[] = "__main__";$/;"	v	file:
+__pyx_k_matstore	pullscripts/merge.c	/^static char __pyx_k_matstore[] = "matstore";$/;"	v	file:
+__pyx_k_merged_index	pullscripts/merge.c	/^static char __pyx_k_merged_index[] = "merged_index";$/;"	v	file:
+__pyx_k_multiprocessing	pullscripts/merge.c	/^static char __pyx_k_multiprocessing[] = "multiprocessing";$/;"	v	file:
+__pyx_k_new_pair	pullscripts/merge.c	/^static char __pyx_k_new_pair[] = "new_pair";$/;"	v	file:
+__pyx_k_num_procs	pullscripts/merge.c	/^static char __pyx_k_num_procs[] = "num_procs";$/;"	v	file:
+__pyx_k_open	pullscripts/merge.c	/^static char __pyx_k_open[] = "open";$/;"	v	file:
+__pyx_k_os	pullscripts/merge.c	/^static char __pyx_k_os[] = "os";$/;"	v	file:
+__pyx_k_out_dir	pullscripts/merge.c	/^static char __pyx_k_out_dir[] = "out_dir";$/;"	v	file:
+__pyx_k_p	pullscripts/merge.c	/^static char __pyx_k_p[] = "p";$/;"	v	file:
+__pyx_k_pair	pullscripts/merge.c	/^static char __pyx_k_pair[] = "pair";$/;"	v	file:
+__pyx_k_path	pullscripts/merge.c	/^static char __pyx_k_path[] = "path";$/;"	v	file:
+__pyx_k_print	pullscripts/merge.c	/^static char __pyx_k_print[] = "print";$/;"	v	file:
+__pyx_k_proc_num	pullscripts/merge.c	/^static char __pyx_k_proc_num[] = "proc_num";$/;"	v	file:
+__pyx_k_procs	pullscripts/merge.c	/^static char __pyx_k_procs[] = "procs";$/;"	v	file:
+__pyx_k_random	pullscripts/merge.c	/^static char __pyx_k_random[] = "random";$/;"	v	file:
+__pyx_k_range	pullscripts/merge.c	/^static char __pyx_k_range[] = "range";$/;"	v	file:
+__pyx_k_release	pullscripts/merge.c	/^static char __pyx_k_release[] = "release";$/;"	v	file:
+__pyx_k_retrieve_mat_as_dict	pullscripts/merge.c	/^static char __pyx_k_retrieve_mat_as_dict[] = "retrieve_mat_as_dict";$/;"	v	file:
+__pyx_k_reverse	pullscripts/merge.c	/^static char __pyx_k_reverse[] = "reverse";$/;"	v	file:
+__pyx_k_run_parallel	pullscripts/merge.c	/^static char __pyx_k_run_parallel[] = "run_parallel";$/;"	v	file:
+__pyx_k_start	pullscripts/merge.c	/^static char __pyx_k_start[] = "start";$/;"	v	file:
+__pyx_k_target	pullscripts/merge.c	/^static char __pyx_k_target[] = "target";$/;"	v	file:
+__pyx_k_test	pullscripts/merge.c	/^static char __pyx_k_test[] = "__test__";$/;"	v	file:
+__pyx_k_w	pullscripts/merge.c	/^static char __pyx_k_w[] = "w";$/;"	v	file:
+__pyx_k_word_to_cached_id	pullscripts/merge.c	/^static char __pyx_k_word_to_cached_id[] = "word_to_cached_id";$/;"	v	file:
+__pyx_k_work_left	pullscripts/merge.c	/^static char __pyx_k_work_left[] = "work_left";$/;"	v	file:
+__pyx_k_write	pullscripts/merge.c	/^static char __pyx_k_write[] = "write";$/;"	v	file:
+__pyx_k_write_pickle	pullscripts/merge.c	/^static char __pyx_k_write_pickle[] = "write_pickle";$/;"	v	file:
+__pyx_k_year	pullscripts/merge.c	/^static char __pyx_k_year[] = "year";$/;"	v	file:
+__pyx_k_years	pullscripts/merge.c	/^static char __pyx_k_years[] = "years";$/;"	v	file:
+__pyx_kp_s_	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_;$/;"	v	file:
+__pyx_kp_s_Merging_counts_for_year	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_Merging_counts_for_year;$/;"	v	file:
+__pyx_kp_s_Start_loop	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_Start_loop;$/;"	v	file:
+__pyx_kp_s_Writing_counts_for_year	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_Writing_counts_for_year;$/;"	v	file:
+__pyx_kp_s__4	pullscripts/merge.c	/^static PyObject *__pyx_kp_s__4;$/;"	v	file:
+__pyx_kp_s_afs_cs_stanford_edu_u_wleif_lan	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_afs_cs_stanford_edu_u_wleif_lan;$/;"	v	file:
+__pyx_kp_s_bin	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_bin;$/;"	v	file:
+__pyx_kp_s_index_pkl	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_index_pkl;$/;"	v	file:
+__pyx_kp_s_index_pkl_2	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_index_pkl_2;$/;"	v	file:
+__pyx_kp_s_list_pkl	pullscripts/merge.c	/^static PyObject *__pyx_kp_s_list_pkl;$/;"	v	file:
+__pyx_lineno	pullscripts/merge.c	/^static int __pyx_lineno;$/;"	v	file:
+__pyx_m	pullscripts/merge.c	/^static PyObject *__pyx_m;$/;"	v	file:
+__pyx_mdef_11googlengram_11pullscripts_5merge_1main	pullscripts/merge.c	/^static PyMethodDef __pyx_mdef_11googlengram_11pullscripts_5merge_1main = {"main", (PyCFunction)__pyx_pw_11googlengram_11pullscripts_5merge_1main, METH_VARARGS|METH_KEYWORDS, 0};$/;"	v	file:
+__pyx_mdef_11googlengram_11pullscripts_5merge_3run_parallel	pullscripts/merge.c	/^static PyMethodDef __pyx_mdef_11googlengram_11pullscripts_5merge_3run_parallel = {"run_parallel", (PyCFunction)__pyx_pw_11googlengram_11pullscripts_5merge_3run_parallel, METH_VARARGS|METH_KEYWORDS, 0};$/;"	v	file:
+__pyx_methods	pullscripts/merge.c	/^static PyMethodDef __pyx_methods[] = {$/;"	v	file:
+__pyx_module_is_main_googlengram__pullscripts__merge	pullscripts/merge.c	/^int __pyx_module_is_main_googlengram__pullscripts__merge = 0;$/;"	v
+__pyx_moduledef	pullscripts/merge.c	/^static struct PyModuleDef __pyx_moduledef = {$/;"	v	typeref:struct:PyModuleDef	file:
+__pyx_n_s_Finished	pullscripts/merge.c	/^static PyObject *__pyx_n_s_Finished;$/;"	v	file:
+__pyx_n_s_Lock	pullscripts/merge.c	/^static PyObject *__pyx_n_s_Lock;$/;"	v	file:
+__pyx_n_s_OrderedDict	pullscripts/merge.c	/^static PyObject *__pyx_n_s_OrderedDict;$/;"	v	file:
+__pyx_n_s_Process	pullscripts/merge.c	/^static PyObject *__pyx_n_s_Process;$/;"	v	file:
+__pyx_n_s_acquire	pullscripts/merge.c	/^static PyObject *__pyx_n_s_acquire;$/;"	v	file:
+__pyx_n_s_args	pullscripts/merge.c	/^static PyObject *__pyx_n_s_args;$/;"	v	file:
+__pyx_n_s_c_word	pullscripts/merge.c	/^static PyObject *__pyx_n_s_c_word;$/;"	v	file:
+__pyx_n_s_chunk_counts	pullscripts/merge.c	/^static PyObject *__pyx_n_s_chunk_counts;$/;"	v	file:
+__pyx_n_s_chunk_index	pullscripts/merge.c	/^static PyObject *__pyx_n_s_chunk_index;$/;"	v	file:
+__pyx_n_s_chunk_name	pullscripts/merge.c	/^static PyObject *__pyx_n_s_chunk_name;$/;"	v	file:
+__pyx_n_s_chunk_num	pullscripts/merge.c	/^static PyObject *__pyx_n_s_chunk_num;$/;"	v	file:
+__pyx_n_s_close	pullscripts/merge.c	/^static PyObject *__pyx_n_s_close;$/;"	v	file:
+__pyx_n_s_collections	pullscripts/merge.c	/^static PyObject *__pyx_n_s_collections;$/;"	v	file:
+__pyx_n_s_cooccurrence	pullscripts/merge.c	/^static PyObject *__pyx_n_s_cooccurrence;$/;"	v	file:
+__pyx_n_s_count	pullscripts/merge.c	/^static PyObject *__pyx_n_s_count;$/;"	v	file:
+__pyx_n_s_defaultdict	pullscripts/merge.c	/^static PyObject *__pyx_n_s_defaultdict;$/;"	v	file:
+__pyx_n_s_dirs	pullscripts/merge.c	/^static PyObject *__pyx_n_s_dirs;$/;"	v	file:
+__pyx_n_s_end	pullscripts/merge.c	/^static PyObject *__pyx_n_s_end;$/;"	v	file:
+__pyx_n_s_enter	pullscripts/merge.c	/^static PyObject *__pyx_n_s_enter;$/;"	v	file:
+__pyx_n_s_exit	pullscripts/merge.c	/^static PyObject *__pyx_n_s_exit;$/;"	v	file:
+__pyx_n_s_export_mats_from_dicts	pullscripts/merge.c	/^static PyObject *__pyx_n_s_export_mats_from_dicts;$/;"	v	file:
+__pyx_n_s_file	pullscripts/merge.c	/^static PyObject *__pyx_n_s_file;$/;"	v	file:
+__pyx_n_s_fname	pullscripts/merge.c	/^static PyObject *__pyx_n_s_fname;$/;"	v	file:
+__pyx_n_s_fp	pullscripts/merge.c	/^static PyObject *__pyx_n_s_fp;$/;"	v	file:
+__pyx_n_s_full_counts	pullscripts/merge.c	/^static PyObject *__pyx_n_s_full_counts;$/;"	v	file:
+__pyx_n_s_googlengram_pullscripts_merge	pullscripts/merge.c	/^static PyObject *__pyx_n_s_googlengram_pullscripts_merge;$/;"	v	file:
+__pyx_n_s_i	pullscripts/merge.c	/^static PyObject *__pyx_n_s_i;$/;"	v	file:
+__pyx_n_s_i_word	pullscripts/merge.c	/^static PyObject *__pyx_n_s_i_word;$/;"	v	file:
+__pyx_n_s_import	pullscripts/merge.c	/^static PyObject *__pyx_n_s_import;$/;"	v	file:
+__pyx_n_s_in_dir	pullscripts/merge.c	/^static PyObject *__pyx_n_s_in_dir;$/;"	v	file:
+__pyx_n_s_indexing	pullscripts/merge.c	/^static PyObject *__pyx_n_s_indexing;$/;"	v	file:
+__pyx_n_s_ioutils	pullscripts/merge.c	/^static PyObject *__pyx_n_s_ioutils;$/;"	v	file:
+__pyx_n_s_isfile	pullscripts/merge.c	/^static PyObject *__pyx_n_s_isfile;$/;"	v	file:
+__pyx_n_s_iteritems	pullscripts/merge.c	/^static PyObject *__pyx_n_s_iteritems;$/;"	v	file:
+__pyx_n_s_join	pullscripts/merge.c	/^static PyObject *__pyx_n_s_join;$/;"	v	file:
+__pyx_n_s_listdir	pullscripts/merge.c	/^static PyObject *__pyx_n_s_listdir;$/;"	v	file:
+__pyx_n_s_load_pickle	pullscripts/merge.c	/^static PyObject *__pyx_n_s_load_pickle;$/;"	v	file:
+__pyx_n_s_lock	pullscripts/merge.c	/^static PyObject *__pyx_n_s_lock;$/;"	v	file:
+__pyx_n_s_main	pullscripts/merge.c	/^static PyObject *__pyx_n_s_main;$/;"	v	file:
+__pyx_n_s_main_2	pullscripts/merge.c	/^static PyObject *__pyx_n_s_main_2;$/;"	v	file:
+__pyx_n_s_matstore	pullscripts/merge.c	/^static PyObject *__pyx_n_s_matstore;$/;"	v	file:
+__pyx_n_s_merged_index	pullscripts/merge.c	/^static PyObject *__pyx_n_s_merged_index;$/;"	v	file:
+__pyx_n_s_multiprocessing	pullscripts/merge.c	/^static PyObject *__pyx_n_s_multiprocessing;$/;"	v	file:
+__pyx_n_s_new_pair	pullscripts/merge.c	/^static PyObject *__pyx_n_s_new_pair;$/;"	v	file:
+__pyx_n_s_num_procs	pullscripts/merge.c	/^static PyObject *__pyx_n_s_num_procs;$/;"	v	file:
+__pyx_n_s_open	pullscripts/merge.c	/^static PyObject *__pyx_n_s_open;$/;"	v	file:
+__pyx_n_s_os	pullscripts/merge.c	/^static PyObject *__pyx_n_s_os;$/;"	v	file:
+__pyx_n_s_out_dir	pullscripts/merge.c	/^static PyObject *__pyx_n_s_out_dir;$/;"	v	file:
+__pyx_n_s_p	pullscripts/merge.c	/^static PyObject *__pyx_n_s_p;$/;"	v	file:
+__pyx_n_s_pair	pullscripts/merge.c	/^static PyObject *__pyx_n_s_pair;$/;"	v	file:
+__pyx_n_s_path	pullscripts/merge.c	/^static PyObject *__pyx_n_s_path;$/;"	v	file:
+__pyx_n_s_print	pullscripts/merge.c	/^static PyObject *__pyx_n_s_print;$/;"	v	file:
+__pyx_n_s_proc_num	pullscripts/merge.c	/^static PyObject *__pyx_n_s_proc_num;$/;"	v	file:
+__pyx_n_s_procs	pullscripts/merge.c	/^static PyObject *__pyx_n_s_procs;$/;"	v	file:
+__pyx_n_s_random	pullscripts/merge.c	/^static PyObject *__pyx_n_s_random;$/;"	v	file:
+__pyx_n_s_range	pullscripts/merge.c	/^static PyObject *__pyx_n_s_range;$/;"	v	file:
+__pyx_n_s_release	pullscripts/merge.c	/^static PyObject *__pyx_n_s_release;$/;"	v	file:
+__pyx_n_s_retrieve_mat_as_dict	pullscripts/merge.c	/^static PyObject *__pyx_n_s_retrieve_mat_as_dict;$/;"	v	file:
+__pyx_n_s_reverse	pullscripts/merge.c	/^static PyObject *__pyx_n_s_reverse;$/;"	v	file:
+__pyx_n_s_run_parallel	pullscripts/merge.c	/^static PyObject *__pyx_n_s_run_parallel;$/;"	v	file:
+__pyx_n_s_start	pullscripts/merge.c	/^static PyObject *__pyx_n_s_start;$/;"	v	file:
+__pyx_n_s_target	pullscripts/merge.c	/^static PyObject *__pyx_n_s_target;$/;"	v	file:
+__pyx_n_s_test	pullscripts/merge.c	/^static PyObject *__pyx_n_s_test;$/;"	v	file:
+__pyx_n_s_w	pullscripts/merge.c	/^static PyObject *__pyx_n_s_w;$/;"	v	file:
+__pyx_n_s_word_to_cached_id	pullscripts/merge.c	/^static PyObject *__pyx_n_s_word_to_cached_id;$/;"	v	file:
+__pyx_n_s_work_left	pullscripts/merge.c	/^static PyObject *__pyx_n_s_work_left;$/;"	v	file:
+__pyx_n_s_write	pullscripts/merge.c	/^static PyObject *__pyx_n_s_write;$/;"	v	file:
+__pyx_n_s_write_pickle	pullscripts/merge.c	/^static PyObject *__pyx_n_s_write_pickle;$/;"	v	file:
+__pyx_n_s_year	pullscripts/merge.c	/^static PyObject *__pyx_n_s_year;$/;"	v	file:
+__pyx_n_s_years	pullscripts/merge.c	/^static PyObject *__pyx_n_s_years;$/;"	v	file:
+__pyx_pf_11googlengram_11pullscripts_5merge_2run_parallel	pullscripts/merge.c	/^static PyObject *__pyx_pf_11googlengram_11pullscripts_5merge_2run_parallel(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_num_procs, PyObject *__pyx_v_out_dir, PyObject *__pyx_v_in_dir, PyObject *__pyx_v_years) {$/;"	f	file:
+__pyx_pf_11googlengram_11pullscripts_5merge_main	pullscripts/merge.c	/^static PyObject *__pyx_pf_11googlengram_11pullscripts_5merge_main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_proc_num, PyObject *__pyx_v_lock, PyObject *__pyx_v_out_dir, PyObject *__pyx_v_in_dir, PyObject *__pyx_v_years) {$/;"	f	file:
+__pyx_print	pullscripts/merge.c	/^static PyObject* __pyx_print = 0;$/;"	v	file:
+__pyx_print_kwargs	pullscripts/merge.c	/^static PyObject* __pyx_print_kwargs = 0;$/;"	v	file:
+__pyx_pw_11googlengram_11pullscripts_5merge_1main	pullscripts/merge.c	/^static PyObject *__pyx_pw_11googlengram_11pullscripts_5merge_1main(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_pw_11googlengram_11pullscripts_5merge_3run_parallel	pullscripts/merge.c	/^static PyObject *__pyx_pw_11googlengram_11pullscripts_5merge_3run_parallel(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {$/;"	f	file:
+__pyx_string_tab	pullscripts/merge.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	file:
+__pyx_tuple__2	pullscripts/merge.c	/^static PyObject *__pyx_tuple__2;$/;"	v	file:
+__pyx_tuple__3	pullscripts/merge.c	/^static PyObject *__pyx_tuple__3;$/;"	v	file:
+__pyx_tuple__5	pullscripts/merge.c	/^static PyObject *__pyx_tuple__5;$/;"	v	file:
+__pyx_tuple__7	pullscripts/merge.c	/^static PyObject *__pyx_tuple__7;$/;"	v	file:
+__stdcall	pullscripts/merge.c	35;"	d	file:
+argparse	freqperyear.py	/^import argparse$/;"	i
+argparse	freqstats.py	/^import argparse$/;"	i
+argparse	freqstats_ind.py	/^import argparse$/;"	i
+argparse	makedecades.py	/^import argparse$/;"	i
+argparse	pullscripts/countmerge.py	/^import argparse$/;"	i
+argparse	pullscripts/downloadandsplit.py	/^import argparse$/;"	i
+argparse	pullscripts/freqgrab.py	/^import argparse$/;"	i
+argparse	pullscripts/gramgrab.py	/^import argparse$/;"	i
+argparse	pullscripts/indexmerge.py	/^import argparse$/;"	i
+argparse	pullscripts/posgrab.py	/^import argparse$/;"	i
+argparse	pullscripts/rungrammerge.py	/^import argparse$/;"	i
+argparse	pullscripts/runmerge.py	/^import argparse$/;"	i
+argparse	samplesizes.py	/^import argparse$/;"	i
+args	cleanwords.py	/^    args = parser.parse_args()$/;"	v
+args	freqperyear.py	/^    args = parser.parse_args()$/;"	v
+args	freqstats.py	/^    args = parser.parse_args()$/;"	v
+args	freqstats_ind.py	/^    args = parser.parse_args()$/;"	v
+args	makedecades.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/countmerge.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/downloadandsplit.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/freqgrab.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/gramgrab.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/indexmerge.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/posgrab.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/rungrammerge.py	/^    args = parser.parse_args()$/;"	v
+args	pullscripts/runmerge.py	/^    args = parser.parse_args()$/;"	v
+args	samplesizes.py	/^    args = parser.parse_args()$/;"	v
+avg_freqs	cleanwords.py	/^    avg_freqs = load_pickle(args.freq_file)$/;"	v
+code_line	pullscripts/merge.c	/^    int code_line;$/;"	m	struct:__anon3	file:
+code_object	pullscripts/merge.c	/^    PyCodeObject* code_object;$/;"	m	struct:__anon3	file:
+collections	freqperyear.py	/^import collections$/;"	i
+collections	freqstats.py	/^import collections$/;"	i
+collections	makedecades.py	/^import collections$/;"	i
+collections	pullscripts/gramgrab.py	/^import collections$/;"	i
+collections	pullscripts/indexmerge.py	/^import collections$/;"	i
+collections	pullscripts/merge.pyx	/^import collections$/;"	i
+collections	pullscripts/posgrab.py	/^import collections$/;"	i
+count	pullscripts/merge.c	/^    int count;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+decades	makedecades.py	/^    decades = range(args.start_year, args.end_year + 1, 10)$/;"	v
+encoding	pullscripts/merge.c	/^typedef struct {PyObject **p; char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon1	file:
+entries	pullscripts/merge.c	/^    __Pyx_CodeObjectCacheEntry* entries;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+export_mat_from_dict	makedecades.py	/^from cooccurrence.matstore import export_mat_from_dict$/;"	i
+freq_thresh	freqperyear.py	/^    freq_thresh = 10.0 ** (-1.0 * float(args.freq_thresh))$/;"	v
+get_index	makedecades.py	/^def get_index(merged_index, year_list, index):$/;"	f
+get_word_indices	samplesizes.py	/^from cooccurrence.indexing import get_word_indices$/;"	i
+index	freqperyear.py	/^    index = ioutils.load_pickle(args.in_dir + "\/merged_list.pkl")$/;"	v
+index	samplesizes.py	/^    index = ioutils.load_pickle(INDEX_FILE)$/;"	v
+indexing	pullscripts/countmerge.py	/^from cooccurrence import matstore, indexing$/;"	i
+indexing	pullscripts/gramgrab.py	/^from cooccurrence import matstore, indexing$/;"	i
+indexing	pullscripts/indexmerge.py	/^from cooccurrence import indexing$/;"	i
+indexing	pullscripts/merge.pyx	/^from cooccurrence import matstore, indexing$/;"	i
+initmerge	pullscripts/merge.c	/^PyMODINIT_FUNC initmerge(void)$/;"	f
+intern	pullscripts/merge.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon1	file:
+ioutils	freqperyear.py	/^import ioutils$/;"	i
+ioutils	freqstats.py	/^import ioutils$/;"	i
+ioutils	freqstats_ind.py	/^import ioutils$/;"	i
+ioutils	pullscripts/countmerge.py	/^import ioutils$/;"	i
+ioutils	pullscripts/downloadandsplit.py	/^import ioutils$/;"	i
+ioutils	pullscripts/freqgrab.py	/^import ioutils$/;"	i
+ioutils	pullscripts/gramgrab.py	/^import ioutils$/;"	i
+ioutils	pullscripts/indexmerge.py	/^import ioutils$/;"	i
+ioutils	pullscripts/merge.pyx	/^import ioutils$/;"	i
+ioutils	pullscripts/posgrab.py	/^import ioutils$/;"	i
+ioutils	samplesizes.py	/^import ioutils$/;"	i
+is_str	pullscripts/merge.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon1	file:
+is_unicode	pullscripts/merge.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEntry;$/;"	m	struct:__anon1	file:
+likely	pullscripts/merge.c	430;"	d	file:
+likely	pullscripts/merge.c	433;"	d	file:
+load_pickle	cleanwords.py	/^from ioutils import mkdir, load_pickle, write_pickle$/;"	i
+load_pickle	makedecades.py	/^from ioutils import mkdir, write_pickle, load_pickle$/;"	i
+main	freqperyear.py	/^def main(proc_num, queue, out_pref, out_dir, in_dir, index, freq_thresh, lang):$/;"	f
+main	freqstats_ind.py	/^def main(proc_num, lock, in_dir, years, word_list):$/;"	f
+main	pullscripts/countmerge.py	/^def main(proc_num, queue, out_dir, in_dir):$/;"	f
+main	pullscripts/freqgrab.py	/^def main(out_dir, source):$/;"	f
+main	pullscripts/gramgrab.py	/^def main(proc_num, queue, out_dir, download_dir, context_size):$/;"	f
+main	pullscripts/merge.pyx	/^def main(proc_num, lock, out_dir, in_dir, years):$/;"	f
+main	pullscripts/posgrab.py	/^def main(out_dir, source, years):$/;"	f
+matstore	freqperyear.py	/^from cooccurrence import matstore$/;"	i
+matstore	pullscripts/countmerge.py	/^from cooccurrence import matstore, indexing$/;"	i
+matstore	pullscripts/gramgrab.py	/^from cooccurrence import matstore, indexing$/;"	i
+matstore	pullscripts/merge.pyx	/^from cooccurrence import matstore, indexing$/;"	i
+matstore	samplesizes.py	/^from cooccurrence import matstore$/;"	i
+max_count	pullscripts/merge.c	/^    int max_count;$/;"	m	struct:__Pyx_CodeObjectCache	file:
+merge	freqperyear.py	/^def merge(years, out_pref, out_dir):$/;"	f
+merge	freqstats.py	/^def merge(years, in_dir):$/;"	f
+merge	freqstats_ind.py	/^def merge(word_list, years, in_dir, out_file):$/;"	f
+mkdir	cleanwords.py	/^from ioutils import mkdir, load_pickle, write_pickle$/;"	i
+mkdir	makedecades.py	/^from ioutils import mkdir, write_pickle, load_pickle$/;"	i
+n	pullscripts/merge.c	/^typedef struct {PyObject **p; char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon1	file:
+np	freqstats.py	/^import numpy as np$/;"	i
+offsetof	pullscripts/merge.c	31;"	d	file:
+os	freqperyear.py	/^import os$/;"	i
+os	freqstats_ind.py	/^import os$/;"	i
+os	pullscripts/downloadandsplit.py	/^import os$/;"	i
+os	pullscripts/freqgrab.py	/^import os$/;"	i
+os	pullscripts/gramgrab.py	/^import os$/;"	i
+os	pullscripts/merge.pyx	/^import os$/;"	i
+os	pullscripts/posgrab.py	/^import os$/;"	i
+out_pref	freqperyear.py	/^    out_pref = args.out_dir + "\/freqnonstop_peryear-" + str(years[0]) + "-" + str(years[-1]) + "-"  + str(args.freq_thresh)$/;"	v
+p	pullscripts/merge.c	/^typedef struct {PyObject **p; char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon1	file:
+parser	cleanwords.py	/^    parser = ArgumentParser()$/;"	v
+parser	freqperyear.py	/^    parser = argparse.ArgumentParser(description="Get yearly sorted by-frequency list of (non-stop) words and dicts with their frequencies")$/;"	v
+parser	freqstats.py	/^    parser = argparse.ArgumentParser(description="Merges years of raw 5gram data.")$/;"	v
+parser	freqstats_ind.py	/^    parser = argparse.ArgumentParser(description="Merges years of raw 5gram data.")$/;"	v
+parser	makedecades.py	/^    parser = argparse.ArgumentParser(description="Merges years of raw 5gram data.")$/;"	v
+parser	pullscripts/countmerge.py	/^    parser = argparse.ArgumentParser(description="Converts yearly counts to have merged index.")$/;"	v
+parser	pullscripts/downloadandsplit.py	/^    parser = argparse.ArgumentParser(description="Pulls and unzips raw 5gram data")$/;"	v
+parser	pullscripts/freqgrab.py	/^    parser = argparse.ArgumentParser(description="Pulls and saves unigram data.")$/;"	v
+parser	pullscripts/gramgrab.py	/^    parser = argparse.ArgumentParser(description="Parses 5gram data into co-occurrence matrices")$/;"	v
+parser	pullscripts/indexmerge.py	/^    parser = argparse.ArgumentParser(description="Makes merged index for cooccurrence data")$/;"	v
+parser	pullscripts/posgrab.py	/^    parser = argparse.ArgumentParser(description="Pulls and saves unigram data.")$/;"	v
+parser	pullscripts/rungrammerge.py	/^    parser = argparse.ArgumentParser(description="Merges years of raw 5gram data.")$/;"	v
+parser	pullscripts/runmerge.py	/^    parser = argparse.ArgumentParser(description="Merges years of raw 5gram data.")$/;"	v
+parser	samplesizes.py	/^    parser = argparse.ArgumentParser(description="get sample sizes")$/;"	v
+random	freqperyear.py	/^import random$/;"	i
+random	freqstats_ind.py	/^import random$/;"	i
+random	pullscripts/gramgrab.py	/^import random$/;"	i
+random	pullscripts/merge.pyx	/^import random$/;"	i
+re	pullscripts/downloadandsplit.py	/^import re$/;"	i
+re	pullscripts/freqgrab.py	/^import re$/;"	i
+re	pullscripts/gramgrab.py	/^import re$/;"	i
+re	pullscripts/posgrab.py	/^import re$/;"	i
+requests	pullscripts/downloadandsplit.py	/^import requests$/;"	i
+requests	pullscripts/freqgrab.py	/^import requests$/;"	i
+requests	pullscripts/posgrab.py	/^import requests$/;"	i
+run	pullscripts/indexmerge.py	/^def run(out_dir, in_dir):$/;"	f
+run	samplesizes.py	/^def run(out_file, in_dir, years, year_indices):$/;"	f
+run_parallel	freqperyear.py	/^def run_parallel(num_procs, years, out_pref, out_dir, in_dir, index, freq_thresh, lang):$/;"	f
+run_parallel	freqstats.py	/^def run_parallel(num_procs, in_dir, years):$/;"	f
+run_parallel	freqstats_ind.py	/^def run_parallel(num_procs, in_dir, years, word_list, out_file):$/;"	f
+run_parallel	makedecades.py	/^def run_parallel(num_procs, out_dir, in_dir, decades):$/;"	f
+run_parallel	pullscripts/countmerge.py	/^def run_parallel(num_procs, out_dir, in_dir):$/;"	f
+run_parallel	pullscripts/downloadandsplit.py	/^def run_parallel(num_processes, out_dir, source):$/;"	f
+run_parallel	pullscripts/gramgrab.py	/^def run_parallel(num_processes, root_dir, source, context_size):$/;"	f
+run_parallel	pullscripts/merge.pyx	/^def run_parallel(num_procs, out_dir, in_dir, years):$/;"	f
+run_parallel	pullscripts/rungrammerge.py	/^from googlengram.pullscripts.runmerge import run_parallel$/;"	i
+run_parallel	pullscripts/runmerge.py	/^from googlengram.pullscripts.merge import run_parallel$/;"	i
+s	pullscripts/merge.c	/^typedef struct {PyObject **p; char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anon1	file:
+sorted_words	cleanwords.py	/^    sorted_words = sorted([word for word, freq in avg_freqs.iteritems() if not word in PUNCTUATION], key = lambda word : -1*avg_freqs[word])$/;"	v
+split_main	pullscripts/downloadandsplit.py	/^def split_main(proc_num, queue, download_dir):$/;"	f
+stopwords	freqperyear.py	/^from nltk.corpus import stopwords$/;"	i
+string	cleanwords.py	/^import string$/;"	i
+subprocess	pullscripts/downloadandsplit.py	/^import subprocess$/;"	i
+subprocess	pullscripts/freqgrab.py	/^import subprocess$/;"	i
+subprocess	pullscripts/posgrab.py	/^import subprocess$/;"	i
+sys	pullscripts/countmerge.py	/^import sys$/;"	i
+time	pullscripts/gramgrab.py	/^import time$/;"	i
+unlikely	pullscripts/merge.c	431;"	d	file:
+unlikely	pullscripts/merge.c	434;"	d	file:
+update_count	pullscripts/gramgrab.py	/^def update_count(ngram, target_ind, year, count, year_counters):$/;"	f
+urllib2	pullscripts/downloadandsplit.py	/^import urllib2$/;"	i
+urllib2	pullscripts/freqgrab.py	/^import urllib2$/;"	i
+urllib2	pullscripts/posgrab.py	/^import urllib2$/;"	i
+word_info	samplesizes.py	/^    word_info = {}$/;"	v
+word_list	freqstats_ind.py	/^    word_list = ioutils.load_pickle(args.word_file)$/;"	v
+word_pickle	samplesizes.py	/^        word_pickle = word_pickle[:args.num_words]$/;"	v
+word_pickle	samplesizes.py	/^    word_pickle = ioutils.load_pickle(args.word_file)$/;"	v
+worker	freqstats.py	/^def worker(proc_num, queue, in_dir):$/;"	f
+worker	makedecades.py	/^def worker(proc_num, queue, out_dir, in_dir):$/;"	f
+write_pickle	cleanwords.py	/^from ioutils import mkdir, load_pickle, write_pickle$/;"	i
+write_pickle	makedecades.py	/^from ioutils import mkdir, write_pickle, load_pickle$/;"	i
+year_word_info	samplesizes.py	/^        year_word_info = get_word_indices(word_pickle, index)[1] $/;"	v
+years	freqperyear.py	/^    years = range(args.start_year, args.end_year + 1)$/;"	v
+years	freqstats.py	/^    years = range(args.start_year, args.end_year + 1, args.year_inc)$/;"	v
+years	freqstats_ind.py	/^    years = range(args.start_year, args.end_year + 1)$/;"	v
+years	pullscripts/posgrab.py	/^    years = range(args.start_year, args.end_year + 1)$/;"	v
+years	pullscripts/runmerge.py	/^    years = range(args.start_year, args.end_year + 1, args.year_inc)$/;"	v
+years	samplesizes.py	/^    years = range(args.start_year, args.end_year + 1)$/;"	v

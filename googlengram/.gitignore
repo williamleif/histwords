@@ -1,0 +1,17 @@
+*.pyc
+*.pyo
+
+*.egg
+
+*.egg-info/*
+
+.tox/*
+.cache/*
+dist/*
+.env/*
+downloads/*
+
+.py*_env/
+
+.coverage
+htmlcov/
