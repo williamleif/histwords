@@ -14,9 +14,10 @@ The structure of the code (in terms of folder organization) is as follows:
 * `statutils` contains helper code for common statistical tasks.
 * `vecanalysis` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omar Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
 * `sgns` contains a modified version of Google's word2vec code (https://code.google.com/archive/p/word2vec/)
-<!---* `notebooks` contains notebooks useful for replicating my published results-->
 
-<!---*See REPLICATION.md for detailed instructions on how to replicate specific published/submitted results.-->
+<!--- * `notebooks` contains notebooks useful for replicating my published results-->
+
+<!--- *See REPLICATION.md for detailed instructions on how to replicate specific published/submitted results.-->
 
 ## Dependencies
 
