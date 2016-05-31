@@ -4,7 +4,6 @@
 
 ## Overview 
 
-** NOTE: this is research code that is currently undergoing some restructuring. Please email if you have issues and be warned that things will be changing over the coming days
 This code base contains an eclectic collection of tools for analyzing historical language change using vector space semantics.
 
 ## Pre-trained historical embeddings
