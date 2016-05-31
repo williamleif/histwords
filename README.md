@@ -14,6 +14,7 @@ The structure of the code (in terms of folder organization) is as follows:
 * `coha` contains code for pulling and processing historical data from the COHA corpus (http://corpus.byu.edu/coha/).
 * `statutils` contains helper code for common statistical tasks.
 * `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omar Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
+* `vecanalysis` contains code for evaluating and analyzing historical word vectors.
 * `sgns` contains a modified version of Google's word2vec code (https://code.google.com/archive/p/word2vec/)
 
 <!--- * `notebooks` contains notebooks useful for replicating my published results-->

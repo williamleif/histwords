@@ -3,7 +3,7 @@ import heapq
 import numpy as np
 from sklearn import preprocessing
 
-from util import load_pickle, lines
+from ioutils import load_pickle, lines
 
 class Embedding:
     """

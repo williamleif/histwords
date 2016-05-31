@@ -6,7 +6,7 @@ from sklearn.utils.extmath import randomized_svd
 from multiprocessing import Queue, Process
 from argparse import ArgumentParser
 
-from vecanalysis.representations.explicit import Explicit
+from representations.explicit import Explicit
 from ioutils import load_year_words, mkdir, write_pickle, words_above_count
 
 INPUT_FORMAT = '{year:d}.bin'
@@ -25,10 +25,7 @@ def worker(proc_num, queue, out_dir, in_dir, count_dir, words, dim, num_words, m
         print len(words)
         base_embed = Explicit.load((in_dir + INPUT_FORMAT).format(year=year), normalize=False)
         base_embed = base_embed.get_subembed(words, restrict_context=True)
-#        print "Converting to CSC..."
-#        mat = base_embed.m.tocsc()
         print "SVD for year", year
-#        u, s, v = sparsesvd(mat, dim)
         u, s, v = randomized_svd(base_embed.m, n_components=dim, n_iter=5)
         print "Saving year", year
         np.save((out_dir + OUT_FORMAT).format(year=year, dim=dim) + "-u.npy", u)

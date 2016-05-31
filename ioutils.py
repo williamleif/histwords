@@ -1,7 +1,7 @@
 import os
 import collections
 import cPickle as pickle
-from cooccurrence.indexing import get_word_indices
+from googlengram.indexing import get_word_indices
 
 def words_above_count(count_dir, year, min_count):
     counts = load_pickle(count_dir + str(year) + "-counts.pkl")
@@ -117,4 +117,8 @@ def load_word_list(filename):
     fp.close()
     return words
 
+def lines(fname):
+    with open(fname) as f:
+        for line in f:
+            yield line
 

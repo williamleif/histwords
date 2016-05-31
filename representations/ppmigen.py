@@ -1,5 +1,5 @@
 import numpy as np
-import util
+import ioutils as util
 from argparse import ArgumentParser
 
 from representations.representation_factory import create_representation

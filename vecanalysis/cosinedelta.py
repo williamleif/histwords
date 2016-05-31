@@ -7,7 +7,7 @@ from multiprocessing import Process, Queue
 
 import ioutils
 from vecanalysis import alignment
-from vecanalysis.representations.representation_factory import create_representation
+from representations.representation_factory import create_representation
 
 def get_cosine_deltas(base_embeds, delta_embeds, words, type):
     deltas = {}

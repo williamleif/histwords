@@ -10,8 +10,8 @@ import collections
 from multiprocessing import Process, Queue
 
 import ioutils
-from vecanalysis.representations.representation_factory import create_representation
-from vecanalysis.representations.embedding import Embedding
+from representations.representation_factory import create_representation
+from representations.embedding import Embedding
 NUM_NEIGH=26
 
 def make_second_order(embed, embed_c):

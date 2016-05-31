@@ -2,8 +2,8 @@ import ioutils
 from argparse import ArgumentParser
 from scipy.stats.stats import spearmanr
 
-from vecanalysis.representations.explicit import Explicit
-from vecanalysis.representations.embedding import SVDEmbedding, Embedding
+from representations.explicit import Explicit
+from representations.embedding import SVDEmbedding, Embedding
 
 def read_test_set(path):
     test = []
@@ -12,7 +12,6 @@ def read_test_set(path):
             x, y, sim = line.strip().lower().split()
             test.append(((x.split("-")[0], y.split("-")[0]), sim))
     return test 
-
 
 def evaluate(representation, data):
     results = []

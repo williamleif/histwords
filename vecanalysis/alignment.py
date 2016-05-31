@@ -1,5 +1,5 @@
 import numpy as np
-from vecanalysis.representations.embedding import Embedding
+from representations.embedding import Embedding
 
 """ Some methods for aligning embeddings spaces """
 
