@@ -13,9 +13,11 @@ Pre-trained word2vec (i.e., SGNS) historical word vectors for multiple languages
 * [All English (eng-all)](http://snap.stanford.edu/historical_embeddings/eng-all_sgns.zip) 
 * [English fiction (eng-fiction-all)](http://snap.stanford.edu/historical_embeddings/eng-fiction-all_sgns.zip) 
 * [French (fre-all)](http://snap.stanford.edu/historical_embeddings/fre-all_sgns.zip) 
-* [All English](http://snap.stanford.edu/historical_embeddings/eng-all_sgns.zip) 
+* [German (ger-all)](http://snap.stanford.edu/historical_embeddings/ger-all_sgns.zip) 
+* [Chinese (chi-sim-all)](http://snap.stanford.edu/historical_embeddings/chi-sim-all_sgns.zip) 
 
 All except Chinese contain embeddings for the decades in the range 1800s-1990s (2000s are excluded because of sampling changes in the N-grams corpus).
+The Chinese data starts in 1950.
 
 Embeddings constructed using the Corpus of Historical American English (COHA) are also available:
 * [Raw words (coha-word)](http://snap.stanford.edu/historical_embeddings/coha-word_sgns.zip) 
