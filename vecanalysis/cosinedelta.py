@@ -85,9 +85,10 @@ def run_parallel(num_procs, out_pref, in_dir, years, target_lists, context_lists
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Computes semantic change statistics for words.")
-    parser.add_argument("dir", help="path to network data (also where output goes)")
+    parser.add_argument("dir", help="path to word vectors")
     parser.add_argument("num_procs", type=int, help="number of processes to spawn")
     parser.add_argument("word_file", help="path to sorted word file")
+    parser.add_argument("out_dir", help="output path")
     parser.add_argument("--target-words", type=int, help="Number of words (of decreasing average frequency) to analyze", default=-1)
     parser.add_argument("--context-words", type=int, help="Number of words (of decreasing average frequency) to include in context. -2 means all regardless of word list", default=-1)
     parser.add_argument("--context-word-file")
@@ -103,11 +104,6 @@ if __name__ == '__main__':
         print "Loading context words.."
         _ , context_lists = ioutils.load_target_context_words(years, args.word_file, -1, args.context_words)
     target_lists, context_lists = ioutils.load_target_context_words(years, args.word_file, args.target_words, args.context_words)
-    outpref = args.dir + "/volstats/" + args.word_file.split("/")[-1].split(".")[0].split("-")[1]
-    if args.context_words != -1:
-        outpref += "/c" + str(args.context_words) + "/"
-    if args.target_words != -1:
-        outpref += "/t" + str(args.target_words) + "/"
-    ioutils.mkdir(outpref)
+    ioutils.mkdir(args.out_dir)
     displacement_base = create_representation(args.type, args.dir + "/" +  str(args.disp_year), restricted_context=context_lists[args.disp_year], normalize=True, add_context=False)
-    run_parallel(args.num_procs, outpref, args.dir + "/", years[1:], target_lists, context_lists, displacement_base, 0, args.year_inc, args.type)       
+    run_parallel(args.num_procs, args.out_dir, args.dir + "/", years[1:], target_lists, context_lists, displacement_base, 0, args.year_inc, args.type)       

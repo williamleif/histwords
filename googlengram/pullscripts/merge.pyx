@@ -3,7 +3,7 @@ import os
 import random
 from multiprocessing import Process, Lock
 
-from cooccurrence import matstore, indexing
+from representations import sparse_io
 import ioutils
 
 def main(proc_num, lock, out_dir, in_dir, years):
@@ -36,7 +36,7 @@ def main(proc_num, lock, out_dir, in_dir, years):
             chunk_name = in_dir + str(chunk_num) + "/" + str(year) + ".bin"
             if not os.path.isfile(chunk_name):
                 continue
-            chunk_counts = matstore.retrieve_mat_as_dict(chunk_name)
+            chunk_counts = sparse_io.retrieve_mat_as_dict(chunk_name)
             chunk_index = ioutils.load_pickle(in_dir + str(chunk_num) + "/index.pkl") 
             chunk_index = list(chunk_index)
             for pair, count in chunk_counts.iteritems():
@@ -47,7 +47,7 @@ def main(proc_num, lock, out_dir, in_dir, years):
                 full_counts[new_pair] += count
         
         print proc_num, "Writing counts for year", year
-        matstore.export_mats_from_dicts({str(year) : full_counts}, out_dir)
+        sparse_io.export_mats_from_dicts({str(year) : full_counts}, out_dir)
         ioutils.write_pickle(merged_index, out_dir + str(year) + "-index.pkl")
         ioutils.write_pickle(list(merged_index), out_dir + str(year) + "-list.pkl")
 

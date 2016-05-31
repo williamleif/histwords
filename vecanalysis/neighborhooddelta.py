@@ -104,10 +104,11 @@ def run_parallel(num_procs, out_pref, in_dir, years, target_lists, context_lists
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Computes semantic change statistics for words.")
-    parser.add_argument("dir", help="path to network data (also where output goes)")
+    parser.add_argument("dir", help="path to word vector data")
     parser.add_argument("num_procs", type=int, help="number of processes to spawn")
     parser.add_argument("word_file", help="path to sorted word file")
-    parser.add_argument("count_dir", help="path to sorted word file")
+    parser.add_argument("count_dir", help="path to directory with word count data")
+    parser.add_argument("out_dir", help="Output directory")
     parser.add_argument("--target-words", type=int, help="Number of words (of decreasing average frequency) to analyze", default=-1)
     parser.add_argument("--context-words", type=int, help="Number of words (of decreasing average frequency) to include in context. -2 means all regardless of word list", default=0)
     parser.add_argument("--context-word-file", help="path to sorted word file")
@@ -127,8 +128,7 @@ if __name__ == '__main__':
     else:
         context_words = None
     context_lists = collections.defaultdict(lambda : context_words)
-    outpref = args.dir + "/volstats/simtest/"
-    ioutils.mkdir(outpref)
+    ioutils.mkdir(args.out_dir)
     displacement_base = create_representation(args.rep_type, args.dir + "/" +  str(args.disp_year), restricted_context=context_lists[args.disp_year], normalize=True, add_context=False)
     disp_words = ioutils.words_above_count(args.count_dir, args.disp_year, args.min_count)
-    run_parallel(args.num_procs, outpref, args.dir + "/", years[1:], target_lists, context_lists, displacement_base, disp_words, args.min_count, args.year_inc, args.rep_type, args.count_dir)       
+    run_parallel(args.num_procs, args.out_dir, args.dir + "/", years[1:], target_lists, context_lists, displacement_base, disp_words, args.min_count, args.year_inc, args.rep_type, args.count_dir)       

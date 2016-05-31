@@ -7,7 +7,8 @@ import random
 import time
 
 import ioutils
-from cooccurrence import matstore, indexing
+from googlegngram import indexing
+from representations import sparse_io
 
 VERSION = '20120701'
 TYPE = '5gram'
@@ -55,7 +56,7 @@ def main(proc_num, queue, out_dir, download_dir, context_size):
 
         print proc_num, "Writing", name
         time.sleep(120 * random.random())
-        matstore.export_mats_from_dicts(year_counters, loc_dir)
+        sparse_io.export_mats_from_dicts(year_counters, loc_dir)
         ioutils.write_pickle(index, loc_dir + "index.pkl")
 
 def run_parallel(num_processes, root_dir, source, context_size):

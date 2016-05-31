@@ -1,8 +1,7 @@
 import collections
 import argparse
 
-import ioutils
-from cooccurrence import indexing
+from googlengram import indexing
 
 YEARS = range(1800, 2001)
 

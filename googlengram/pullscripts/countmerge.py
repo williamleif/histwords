@@ -3,7 +3,8 @@ import argparse
 from Queue import Empty 
 from multiprocessing import Process, Queue
 
-from cooccurrence import matstore, indexing
+from googlengram import indexing
+from representations import sparse_io
 import ioutils
 
 YEARS = range(1900, 2001)
@@ -19,7 +20,7 @@ def main(proc_num, queue, out_dir, in_dir):
             break
         print proc_num, "Fixing counts for year", year
         fixed_counts = {}
-        old_mat = matstore.retrieve_mat_as_dict(in_dir + str(year) + ".bin")
+        old_mat = sparse_io.retrieve_mat_as_dict(in_dir + str(year) + ".bin")
         old_index = ioutils.load_pickle(in_dir + str(year) + "-list.pkl") 
         for pair, count in old_mat.iteritems():
             try:
@@ -33,7 +34,7 @@ def main(proc_num, queue, out_dir, in_dir):
             fixed_counts[new_pair] = count
         
         print proc_num, "Writing counts for year", year
-        matstore.export_mats_from_dicts({str(year) : fixed_counts}, out_dir)
+        sparse_io.export_mats_from_dicts({str(year) : fixed_counts}, out_dir)
 
 def run_parallel(num_procs, out_dir, in_dir):
     queue = Queue()
