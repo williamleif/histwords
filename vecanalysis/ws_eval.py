@@ -18,7 +18,6 @@ def evaluate(representation, data):
     oov = 0
     for (x, y), sim in data:
         if representation.oov(x) or representation.oov(y):
-            print x, y
             oov += 1
 #           continue
             results.append((0, sim)) 

@@ -1,5 +1,6 @@
 # project specific
 seaborn
+embeddings
 scikits-bootstrap
 pattern
 statsmodels

@@ -5,15 +5,46 @@
 ## Overview 
 
 ** NOTE: this is research code that is currently undergoing some restructuring. Please email if you have issues and be warned that things will be changing over the coming days
-
 This code base contains an eclectic collection of tools for analyzing historical language change using vector space semantics.
-Links to pre-trained historical word vectors will be released soon (please email me if you need these asap)!!
+
+## Pre-trained historical embeddings
+
+Pre-trained word2vec (i.e., SGNS) historical word vectors for multiple languages (constructed via Google N-grams) can be found at:
+* [All English (eng-all)](http://snap.stanford.edu/historical_embeddings/eng-all_sgns.zip) 
+* [English fiction (eng-fiction-all)](http://snap.stanford.edu/historical_embeddings/eng-fiction-all_sgns.zip) 
+* [French (fre-all)](http://snap.stanford.edu/historical_embeddings/fre-all_sgns.zip) 
+* [All English](http://snap.stanford.edu/historical_embeddings/eng-all_sgns.zip) 
+All except Chinese contain embeddings for the decades in the range 1800s-1990s (2000s are excluded because of sampling changes in the N-grams corpus).
+Embeddings constructed using the Corpus of Historical American English (COHA) are also available:
+* [Raw words (coha-word)](http://snap.stanford.edu/historical_embeddings/coha-word_sgns.zip) 
+* [Word lemmas (coha-lemma)](http://snap.stanford.edu/historical_embeddings/coha-lemma_sgns.zip) 
+
+`example.sh` contains an example run, showing how to download and use the embeddings.
+`example.py` shows how to use the vector representations in the Python code (assuming you have already run the `example.sh` script.)
+
+[This paper](http://arxiv.org/abs/1605.09096) describes how the embeddings were constructed.
+If you make use of these embeddings in your research, please cite the following:
+@inproceedings{hamilton_diachronic_2016,
+  title = {Diachronic {Word} {Embeddings} {Reveal} {Statistical} {Laws} of {Semantic} {Change}},
+  url = {http://arxiv.org/abs/1605.09096},
+  booktitle = {Proc. {Assoc}. {Comput}. {Ling}. ({ACL})},
+  author = {Hamilton, William L. and Leskovec, Jure and Jurafsky, Dan},
+  year = {2016}
+}
+
+More embeddings (using different methods) and more statistics on the historical data will be released soon!
+
+## Code organization
+
 The structure of the code (in terms of folder organization) is as follows:
 
+Main folder for using historical embeddings:
+* `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omar Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
+
+Folders with pre-processing code and active research code (potentially unstable):
 * `googlengram` contains code for pulling and processing historical Google N-Gram Data (http://storage.googleapis.com/books/ngrams/books/datasetsv2.html).
 * `coha` contains code for pulling and processing historical data from the COHA corpus (http://corpus.byu.edu/coha/).
 * `statutils` contains helper code for common statistical tasks.
-* `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omar Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
 * `vecanalysis` contains code for evaluating and analyzing historical word vectors.
 * `sgns` contains a modified version of Google's word2vec code (https://code.google.com/archive/p/word2vec/)
 

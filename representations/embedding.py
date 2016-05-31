@@ -31,7 +31,7 @@ class Embedding:
         return not self.oov(key)
 
     @classmethod
-    def load(cls, path, normalize=True, add_context=True, **kwargs):
+    def load(cls, path, normalize=True, add_context=False, **kwargs):
         mat = np.load(path + "-w.npy")
         if add_context:
             mat += np.load(path + "-c.npy")

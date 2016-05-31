@@ -6,8 +6,8 @@ from Queue import Empty
 from multiprocessing import Process, Queue
 
 import ioutils
-from cooccurrence import matstore
-from cooccurrence.indexing import get_full_word_list
+from representations import sparse_io
+from googlengrams.indexing import get_full_word_list
 
 """
 Get statistics on PPMI network such as degrees and clustering coefficients.
@@ -92,9 +92,9 @@ def worker(proc_num, queue, out_pref, in_dir, year_index_infos, thresh):
 
         print proc_num, "Retrieving mat for year", year
         if thresh != None:
-            mat = matstore.retrieve_mat_as_coo_thresh(in_dir + str(year) + ".bin", thresh)
+            mat = sparse_io.retrieve_mat_as_coo_thresh(in_dir + str(year) + ".bin", thresh)
         else:
-            mat = matstore.retrieve_mat_as_coo(in_dir + str(year) + ".bin", min_size=5000000)
+            mat = sparse_io.retrieve_mat_as_coo(in_dir + str(year) + ".bin", min_size=5000000)
         print proc_num, "Getting stats for year", year
         year_stats = get_year_stats(mat, year_index_infos[year]["index"], year_index_infos[year]["list"], index_set = set(year_index_infos[year]["indices"]))
 
