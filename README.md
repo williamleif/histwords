@@ -4,7 +4,7 @@
 
 ## Overview 
 
-This code base contains an eclectic collection of tools for analyzing historical language change using vector space semantics.
+An eclectic collection of tools for analyzing historical language change using vector space semantics.
 
 ## Pre-trained historical embeddings
 
