@@ -1,6 +1,7 @@
 #Word Embeddings for Historical Text
 
 ### Author: William Hamilton (wleif@stanford.edu)
+### [Project Website](http://nlp.stanford.edu/projects/histwords)
 
 ## Overview 
 
@@ -10,7 +11,9 @@ An eclectic collection of tools for analyzing historical language change using v
 
 ## Pre-trained historical embeddings
 
-Pre-trained word2vec (i.e., SGNS) historical word vectors for multiple languages (constructed via Google N-grams) can be found at:
+Various embeddings (for many languages and using different embeddings approaches are available on the [project website](http://nlp.stanford.edu/projects/histwords).
+
+Some pre-trained word2vec (i.e., SGNS) historical word vectors for multiple languages (constructed via Google N-grams) are also available here:
 * [All English (eng-all)](http://snap.stanford.edu/historical_embeddings/eng-all_sgns.zip) 
 * [English fiction (eng-fiction-all)](http://snap.stanford.edu/historical_embeddings/eng-fiction-all_sgns.zip) 
 * [French (fre-all)](http://snap.stanford.edu/historical_embeddings/fre-all_sgns.zip) 
@@ -38,7 +41,6 @@ If you make use of these embeddings in your research, please cite the following:
   year = {2016}
 }
 
-More embeddings (using different methods) and more statistics on the historical data will be released soon!
 
 ## Code organization
 

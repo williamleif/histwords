@@ -120,7 +120,10 @@ if __name__ == '__main__':
     parser.add_argument("dir", help="path to directory with nppmi data and year indexes")
     parser.add_argument("word_file", help="path to sorted word file(s).", default=None)
     parser.add_argument("num_procs", type=int, help="number of processes to spawn")
+
     parser.add_argument("--num-words", type=int, help="Number of words (of decreasing average frequency) to include. Must also specifiy word file and index.", default=-1)
+    parser.add_argument("--min-count", type=int, help="Min word count for inclusion in network. Must also include count dir if this used.", default=-1)
+    parser.add_argument("--count-dir", type=int, help="Directory with count data.", default=-1)
     parser.add_argument("--start-year", type=int, help="start year (inclusive)", default=1900)
     parser.add_argument("--end-year", type=int, help="start year (inclusive)", default=2000)
     parser.add_argument("--year-inc", type=int, help="year increment", default=1)
