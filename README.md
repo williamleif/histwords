@@ -60,6 +60,8 @@ Folders with pre-processing code and active research code (potentially unstable)
 
 `example.py` shows how to compute the simlarity series for two words over time, which is how we evaluated different methods against the attested semantic shifts listed in our paper. 
 
+If you want to learn historical embeddings for new data, the code in the `sgns` directory is recommended, which can be run with the default settings. As long as your corpora has at least 100 million words per time-period, this is the best method. For smaller corpora, using the `representations/ppmigen.py` code followed by the `vecanalysis/makelowdim.py` code (to learn SVD embeddings) is recommended. In either case, the `vecanalysis/seq_procrustes.py` code should be used to align the learned embeddings. The default hyperparameters should suffice for most use cases. 
+
 <!--- * `notebooks` contains notebooks useful for replicating my published results-->
 
 <!--- *See REPLICATION.md for detailed instructions on how to replicate specific published/submitted results.-->
