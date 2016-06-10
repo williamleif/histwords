@@ -56,6 +56,10 @@ Folders with pre-processing code and active research code (potentially unstable)
 * `vecanalysis` contains code for evaluating and analyzing historical word vectors.
 * `sgns` contains a modified version of Google's word2vec code (https://code.google.com/archive/p/word2vec/)
 
+`statistical-laws.ipynb` contains an IPython notebook with the main code necessary for replicating the key results of our [published work](http://arxiv.org/abs/1605.09096).
+
+`example.py` shows how to compute the simlarity series for two words over time, which is how we evaluated different methods against the attested semantic shifts listed in our paper. 
+
 <!--- * `notebooks` contains notebooks useful for replicating my published results-->
 
 <!--- *See REPLICATION.md for detailed instructions on how to replicate specific published/submitted results.-->
