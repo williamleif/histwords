@@ -47,7 +47,7 @@ If you make use of these embeddings in your research, please cite the following:
 The structure of the code (in terms of folder organization) is as follows:
 
 Main folder for using historical embeddings:
-* `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omar Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
+* `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omer Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
 
 Folders with pre-processing code and active research code (potentially unstable):
 * `googlengram` contains code for pulling and processing historical Google N-Gram Data (http://storage.googleapis.com/books/ngrams/books/datasetsv2.html).
