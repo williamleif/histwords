@@ -7,8 +7,8 @@ setup(name='histwords',
       author='William Hamilton',
       author_email='wleif@stanford.edu',
       license='Apache Version 2',
-      install_requires = ['numpy'
-                          'cython'
-                          'sklearn>=0.17'
+      install_requires = ['numpy',
+                          'cython',
+                          'sklearn>=0.17',
                           'statsmodels']
       )
