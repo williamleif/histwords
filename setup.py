@@ -9,6 +9,6 @@ setup(name='histwords',
       license='Apache Version 2',
       install_requires = ['numpy',
                           'cython',
-                          'sklearn>=0.17',
+                          'sklearn',
                           'statsmodels']
       )
