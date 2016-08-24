@@ -1,9 +1,14 @@
-from distutils.core import setup
-from Cython.Build import cythonize
-import numpy
+from setuptools import setup
 
-setup(
-    name = "Langchange",
-    ext_modules = cythonize(["googlengram/pullscripts/*.pyx", "cooccurrence/*.pyx"]),
-    include_dirs = [numpy.get_include()]
-)
+setup(name='histwords',
+      version='0.1',
+      description='Code for manipulating historical word vector embeddings.',
+      url='https://github.com/williamleif/histwords',
+      author='William Hamilton',
+      author_email='wleif@stanford.edu',
+      license='Apache Version 2',
+      install_requires = ['numpy'
+                          'cython'
+                          'sklearn>=0.17'
+                          'statsmodels']
+      )
