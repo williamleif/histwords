@@ -7,7 +7,7 @@
 
 An eclectic collection of tools for analyzing historical language change using vector space semantics.
 
-![alt text](https://github.com/williamleif/historical-embeddings/raw/master/wordpaths.png "Two-dimensional projections of some semantic changes computed using the English SGNS vectors.")
+![alt text](https://github.com/williamleif/historical-embeddings/raw/master/wordpaths.png "Two-dimensional projections of some semantic changes computed using the English SGNS vectors. Check the appendix of my ACL 2016 paper (linked below) for details.")
 
 ## Pre-trained historical embeddings
 
