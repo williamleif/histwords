@@ -10,7 +10,7 @@ def read_test_set(path):
     with open(path) as f:
         for line in f:
             x, y, sim = line.strip().lower().split()
-            test.append(((x.split("-")[0], y.split("-")[0]), sim))
+            test.append(((x.split("-")[0], y.split("-")[0]), float(sim)))
     return test 
 
 def evaluate(representation, data):
