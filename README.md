@@ -7,7 +7,7 @@
 
 An eclectic collection of tools for analyzing historical language change using vector space semantics.
 
-![alt text](https://github.com/williamleif/historical-embeddings/raw/master/wordpaths.png "Two-dimensional projections of some semantic changes computed using the English SGNS vectors.")
+![alt text](https://github.com/williamleif/historical-embeddings/raw/master/wordpaths.png "Two-dimensional projections of some semantic changes computed using the English SGNS vectors. Check the appendix of my ACL 2016 paper (linked below) for details.")
 
 ## Pre-trained historical embeddings
 
@@ -47,7 +47,7 @@ If you make use of these embeddings in your research, please cite the following:
 The structure of the code (in terms of folder organization) is as follows:
 
 Main folder for using historical embeddings:
-* `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omar Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
+* `representations` contains code that provides a high-level interface to (historical) word vectors and is originally based upon Omer Levy's hyperwords package (https://bitbucket.org/omerlevy/hyperwords).
 
 Folders with pre-processing code and active research code (potentially unstable):
 * `googlengram` contains code for pulling and processing historical Google N-Gram Data (http://storage.googleapis.com/books/ngrams/books/datasetsv2.html).
@@ -56,7 +56,7 @@ Folders with pre-processing code and active research code (potentially unstable)
 * `vecanalysis` contains code for evaluating and analyzing historical word vectors.
 * `sgns` contains a modified version of Google's word2vec code (https://code.google.com/archive/p/word2vec/)
 
-`statistical-laws.ipynb` contains an IPython notebook with the main code necessary for replicating the key results of our [published work](http://arxiv.org/abs/1605.09096).
+<!---`statistical-laws.ipynb` contains an IPython notebook with the main code necessary for replicating the key results of our [published work](http://arxiv.org/abs/1605.09096).--->
 
 `example.py` shows how to compute the simlarity series for two words over time, which is how we evaluated different methods against the attested semantic shifts listed in our paper. 
 
