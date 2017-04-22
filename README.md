@@ -1,4 +1,4 @@
-#Word Embeddings for Historical Text
+# Word Embeddings for Historical Text
 
 ### Author: William Hamilton (wleif@stanford.edu)
 ### [Project Website](http://nlp.stanford.edu/projects/histwords)
