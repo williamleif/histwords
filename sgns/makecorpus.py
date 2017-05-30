@@ -7,7 +7,7 @@ from Queue import Empty
 
 import ioutils
 from vecanalysis.representations.explicit import Explicit
-from misc.fastfreqdist import CachedFreqDist
+from statutils.fastfreqdist import CachedFreqDist
 SAMPLE_MAX = 1e9
 
 def worker(proc_num, queue, out_dir, in_dir, count_dir, valid_words, num_words, min_count, sample=1e-5):
