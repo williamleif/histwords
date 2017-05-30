@@ -3,7 +3,8 @@ import heapq
 import numpy as np
 from sklearn import preprocessing
 
-from ioutils import load_pickle, lines
+from ioutils import load_pickle
+#, lines
 
 class Embedding:
     """
@@ -114,13 +115,15 @@ class SVDEmbedding(Embedding):
             self.normalize()
 
 class GigaEmbedding(Embedding):
-    def __init__(self, path, words, dim=300, normalize=True, **kwargs):
+    def __init__(self, path, words=[], dim=300, normalize=True, **kwargs):
         seen = []
         vs = {}
-        for line in lines(path):
+        for line in open(path):
             split = line.split()
             w = split[0]
-            if w in words:
+            if words == [] or w in words:
+                if len(split) != dim+1:
+                    continue
                 seen.append(w)
                 vs[w] = np.array(map(float, split[1:]), dtype='float32')
         self.iw = seen
