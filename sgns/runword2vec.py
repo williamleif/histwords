@@ -38,7 +38,7 @@ def train_years(years, in_dir, out_dir, dim, workers, sequential):
                     '-verbose', '2'])
 
 if __name__ == "__main__":
-    parser = ArgumentParser("Runs sequential Glove embeddings for years")
+    parser = ArgumentParser("Runs sequential word2vec embeddings for years")
     parser.add_argument("in_dir", help="Directory with cooccurrence information and vocab.")
     parser.add_argument("out_dir")
     parser.add_argument("--dim", type=int, default=300)

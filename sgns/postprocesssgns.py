@@ -35,7 +35,7 @@ def worker(proc_num, queue, dir, count_dir, min_count):
         write_pickle(iw, dir + str(year) + "-vocab.pkl")
 
 if __name__ == "__main__":
-    parser = ArgumentParser("Constructs training files for GloVe.")
+    parser = ArgumentParser("Post-processes SGNS vectors to easier-to-use format. Removes infrequent words.")
     parser.add_argument("dir")
     parser.add_argument("count_dir", help="Directory with count data.")
     parser.add_argument("--workers", type=int, help="Number of processes to spawn", default=20)
