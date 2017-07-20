@@ -41,6 +41,10 @@ If you make use of these embeddings in your research, please cite the following:
   year = {2016}
 }
 
+## Training your own embeddings
+
+You can use the provided code to train your own embeddings (see code organization below). However, thanks to Ryan Heuser you can also simply train embeddings with gensim (https://radimrehurek.com/gensim/) and use Ryan's port of my code to align the gensim models between time periods (https://gist.github.com/quadrismegistus/09a93e219a6ffc4f216fb85235535faf). Gensim contains many easy-to-use variants of word embeddings (e.g., LSI/SVD, word2vec, wordrank, ...), wrappers for using other packages like GloVe, and is very well maintained, so this solution is recommended. 
+
 
 ## Code organization
 
