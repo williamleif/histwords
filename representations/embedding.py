@@ -33,9 +33,9 @@ class Embedding:
 
     @classmethod
     def load(cls, path, normalize=True, add_context=False, **kwargs):
-        mat = np.load(path + "-w.npy")
+        mat = np.load(path + "-w.npy", mmap_mode="c")
         if add_context:
-            mat += np.load(path + "-c.npy")
+            mat += np.load(path + "-c.npy", mmap_mode="c")
         iw = load_pickle(path + "-vocab.pkl")
         return cls(mat, iw, normalize) 
 
@@ -96,8 +96,8 @@ class SVDEmbedding(Embedding):
     """
     
     def __init__(self, path, normalize=True, eig=0.0, **kwargs):
-        ut = np.load(path + '-u.npy')
-        s = np.load(path + '-s.npy')
+        ut = np.load(path + '-u.npy', mmap_mode="c")
+        s = np.load(path + '-s.npy', mmap_mode="c")
         vocabfile = path + '-vocab.pkl'
         self.iw = load_pickle(vocabfile)
         self.wi = {w:i for i, w in enumerate(self.iw)}
