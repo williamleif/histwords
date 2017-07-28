@@ -25,12 +25,16 @@ if __name__ == "__main__":
         words = lookups.keys()
         values = [ lookups[word] for word in words ]
         fitted = helpers.fit_tsne(values)
+        if not len(fitted):
+            print "Couldn't model word", word1
+            continue
 
         # draw the words onto the graph
         cmap = helpers.get_cmap(len(time_sims))
         annotations = helpers.plot_words(word1, words, fitted, cmap, sims)
 
-        helpers.plot_annotations(annotations)
+        if annotations:
+            helpers.plot_annotations(annotations)
 
         helpers.savefig("viz/output/%s_annotated" % word1)
         for year, sim in time_sims.iteritems():

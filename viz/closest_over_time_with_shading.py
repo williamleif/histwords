@@ -28,6 +28,9 @@ if __name__ == "__main__":
 
         values = [ lookups[word] for word in words ]
         fitted = helpers.fit_tsne(values)
+        if not len(fitted):
+            print "Couldn't model word", word1
+            continue
 
         cmap = helpers.get_cmap(len(time_sims))
         annotations = helpers.plot_words(word1, words, fitted, cmap, sims)

@@ -1,0 +1,46 @@
+.input .inputbox {
+  border-radius: 5px;
+  border: 2px solid #eee;
+  padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+  margin-right: 1%;
+}
+
+.input .inputbox:focus {
+  border: 2px solid #ccc;
+}
+
+.input {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+@-moz-document url-prefix() { 
+  .content table {
+    margin-bottom: 100px;
+  }
+
+  .container-fluid .mynick {
+    height: 70px;
+
+  }
+}
+
+

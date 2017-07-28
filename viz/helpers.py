@@ -1,9 +1,17 @@
 import sys
 import os
 
+import time
+
+
 tpath = os.path.dirname(os.path.realpath(__file__))
+VIZ_DIR=tpath
+
 tpath = os.path.abspath(os.path.join(tpath, "../"))
+ROOT_DIR=tpath
+
 sys.path.append(tpath)
+os.chdir(tpath)
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,12 +27,13 @@ def get_words():
 
     return WORDS
 
-CMAP_MIN=10
+CMAP_MIN=5
 def get_cmap(n, name='YlGn'):
     return plt.cm.get_cmap(name, n+CMAP_MIN)
 
 # this is based on embedding.py get_time_sims
 def get_time_sims(self, word1):
+    start = time.time()
     time_sims = collections.OrderedDict()
     lookups = {}
     nearests = {}
@@ -42,20 +51,41 @@ def get_time_sims(self, word1):
                 lookups[ww] = embed.represent(word)
                 sims[ww] = sim
 
+    print "GET TIME SIMS FOR %s TOOK %s" % (word1, time.time() - start)
     return time_sims, lookups, nearests, sims
 
+EMBED_CACHE = {}
+
+def clear_embed_cache():
+    global EMBED_CACHE
+    EMBED_CACHE = {}
+
 def load_embeddings(filename="embeddings/eng-all_sgns"):
-    fiction_embeddings = SequentialEmbedding.load(filename, range(1900, 2000, 10))
-    return fiction_embeddings
+    print "LOADING EMBEDDINGS %s" % filename
+    start = time.time()
+
+    if filename in EMBED_CACHE:
+        return EMBED_CACHE[filename]
+
+    embeddings = SequentialEmbedding.load(filename, range(1840, 2000, 10))
+    print "LOAD EMBEDDINGS TOOK %s" % (time.time() - start)
+
+    EMBED_CACHE[filename] = embeddings
+    return embeddings
 
 def clear_figure():
     plt.figure(figsize=(20,20))
     plt.clf()
 
 def fit_tsne(values):
+    if not values:
+        return
+
+    start = time.time()
     mat = np.array(values)
-    model = TSNE(n_components=2, random_state=0, learning_rate=150, early_exaggeration=4)
+    model = TSNE(n_components=2, random_state=0, learning_rate=150, init='pca')
     fitted = model.fit_transform(mat)
+    print "FIT TSNE TOOK %s" % (time.time() - start)
 
     return fitted
 
@@ -70,7 +100,7 @@ def plot_words(word1, words, fitted, cmap, sims):
         pt = fitted[i] 
 
         ww,decade = [w.strip() for w in words[i].split("|")]
-        color = cmap((int(decade) - 1900) / 10 + CMAP_MIN)
+        color = cmap((int(decade) - 1840) / 10 + CMAP_MIN)
         word = ww
         sizing = sims[words[i]] * 30
 
@@ -99,3 +129,7 @@ def plot_annotations(annotations):
 
 def savefig(name):
     plt.savefig(name, bbox_inches=0)
+
+
+def get_now():
+    return int(time.time() * 1000)
