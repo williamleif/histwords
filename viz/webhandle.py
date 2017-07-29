@@ -80,7 +80,7 @@ def do_search(word1):
             ww, decade = word.split("|")
             obj = {
                 "word" : ww,
-                "year" : decade,
+                "year" : int(decade),
                 "similarity" : sims[word],
                 "position" : {
                     "x" : round(fitted[i][0], 3),

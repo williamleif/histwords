@@ -1,29 +1,4 @@
-.input .inputbox {
-  border-radius: 5px;
-  border: 2px solid #eee;
-  padding: 5px;
-  font-size: 20px;
-  width: 100%;
-  outline: none;
-  margin-right: 1%;
-}
-
-.input .inputbox:focus {
-  border: 2px solid #ccc;
-}
-
-.input {
-  padding: 0px;
-  margin: 0px;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-}
-
-
-
+/* SCROLLBAR RESET */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -32,15 +7,109 @@
   background-color: #ddd;
 }
 
-@-moz-document url-prefix() { 
-  .content table {
-    margin-bottom: 100px;
-  }
 
-  .container-fluid .mynick {
-    height: 70px;
-
-  }
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
+
+
+/* HEADER (OBVIOUSLY) */
+.header .inputbox {
+  border-radius: 5px;
+  border: 2px solid #eee;
+  padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+}
+
+.header .inputbox:focus {
+  border: 2px solid #ccc;
+}
+
+.header {
+  padding: 10px 10%;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255,255,255,.95);
+}
+
+.container {
+  width: 80%;
+  padding-top: 120px;
+  margin: auto;
+}
+
+/* TABLE CSS NEEDS TO BE SCOPED AND CLEANED UP */
+table.flex {
+  display: flex;
+}
+.flex-col {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  font-weight: 400;
+}
+th {
+  font-weight: 500;
+}
+
+td {
+  cursor: pointer;
+
+}
+
+tr:nth-child(2n) {
+  background: #fafafa;
+}
+tr:nth-child(2n+1) {
+  background: #efefef;
+}
+td.compare {
+  background: #DE96BD !important;
+}
+td.selected {
+  background: #98DE96 !important;
+}
+td span.similarity {
+  font-size: .75em;
+  font-weight: 200;
+  color: rgba(0,0,0,.5);
+}
+
+/* VIEW TABS */
+
+.viewtab_box {
+  font-size: 20px;
+}
+
+.viewtab {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.viewtab:hover {
+  border-bottom: 2px solid lightgray;
+}
+
+.viewtab.active {
+  border-bottom: 2px solid gray;
+}
 

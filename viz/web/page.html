@@ -11,16 +11,25 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"> </script>
 
-
-    <div class='container clearfix'>
-      <div class="input">
+    <div class="container clearfix">
+      <div class="header">
         <input class='inputbox' type="text" placeholder="enter a term to explore"></input>
+        <div class='loadingtray'> </div>
+        <h2 id="search_term" style="display:none;">You searched for <span></span></h2>
+
+        
+        <div class="viewtab_box">
+          view as: 
+          <div class="viewtab active table_view">table</div>
+          <div class="viewtab spatial_view">spatial</div>
+          <div class="viewtab line_view">line</div>
+        </div>
       </div>
 
-      <div>
-        <pre class="results">
 
-        </pre>
+      <div class="results">
+        <table class="flex" id="matrix_by_year" style="display:none;">
+        </table>
       </div>
     </div>
 
