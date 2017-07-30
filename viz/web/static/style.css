@@ -15,8 +15,9 @@
 
 
 
-/* HEADER (OBVIOUSLY) */
-.header .inputbox {
+/* HEADER */
+.inputbox {
+  margin-top: 20px;
   border-radius: 5px;
   border: 2px solid #eee;
   padding: 5px;
@@ -25,7 +26,7 @@
   outline: none;
 }
 
-.header .inputbox:focus {
+.inputbox:focus {
   border: 2px solid #ccc;
 }
 
@@ -40,13 +41,19 @@
   background: rgba(255,255,255,.95);
 }
 
+body {
+  margin: 0px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
 .container {
   width: 80%;
   padding-top: 120px;
   margin: auto;
 }
 
-/* TABLE CSS NEEDS TO BE SCOPED AND CLEANED UP */
+/* TODO: TABLE CSS NEEDS TO BE SCOPED AND CLEANED UP */
 table.flex {
   display: flex;
 }
@@ -96,6 +103,7 @@ td span.similarity {
 
 .viewtab_box {
   font-size: 20px;
+  float: left;
 }
 
 .viewtab {
@@ -103,6 +111,7 @@ td span.similarity {
   cursor: pointer;
   padding: 5px;
   margin-top: 5px;
+  border-bottom: 2px solid white;
 }
 
 .viewtab:hover {
@@ -113,3 +122,25 @@ td span.similarity {
   border-bottom: 2px solid gray;
 }
 
+.breadcrumb {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.breadcrumb:hover {
+  background-color: gray;
+}
+
+.breadcrumb.active {
+  background-color: lightgreen;
+
+}
+
+.breadcrumb, .viewtab {
+  width: 80px;
+  overflow: hidden;
+  text-align: center;
+}

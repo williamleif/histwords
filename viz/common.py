@@ -5,7 +5,7 @@ import time
 
 
 tpath = os.path.dirname(os.path.realpath(__file__))
-VIZ_DIR=tpath
+VIZ_DIR=os.path.join(tpath, "web")
 
 tpath = os.path.abspath(os.path.join(tpath, "../"))
 ROOT_DIR=tpath
@@ -60,18 +60,21 @@ def clear_embed_cache():
     global EMBED_CACHE
     EMBED_CACHE = {}
 
+import threading
+embed_lock = threading.Lock()
 def load_embeddings(filename="embeddings/eng-all_sgns"):
-    print "LOADING EMBEDDINGS %s" % filename
-    start = time.time()
+    with embed_lock:
+        print "LOADING EMBEDDINGS %s" % filename
+        start = time.time()
 
-    if filename in EMBED_CACHE:
-        return EMBED_CACHE[filename]
+        if filename in EMBED_CACHE:
+            return EMBED_CACHE[filename]
 
-    embeddings = SequentialEmbedding.load(filename, range(1840, 2000, 10))
-    print "LOAD EMBEDDINGS TOOK %s" % (time.time() - start)
+        embeddings = SequentialEmbedding.load(filename, range(1840, 2000, 10))
+        print "LOAD EMBEDDINGS TOOK %s" % (time.time() - start)
 
-    EMBED_CACHE[filename] = embeddings
-    return embeddings
+        EMBED_CACHE[filename] = embeddings
+        return embeddings
 
 def clear_figure():
     plt.figure(figsize=(20,20))
@@ -89,6 +92,13 @@ def fit_tsne(values):
 
     return fitted
 
+
+def get_now():
+    return int(time.time() * 1000)
+
+
+
+# plotting features, not used much any more
 def plot_words(word1, words, fitted, cmap, sims):
     # TODO: remove this and just set the plot axes directly
     plt.scatter(fitted[:,0], fitted[:,1], alpha=0)
@@ -96,6 +106,7 @@ def plot_words(word1, words, fitted, cmap, sims):
     plt.axis('off')
 
     annotations = []
+    isArray = type(word1) == list
     for i in xrange(len(words)):
         pt = fitted[i] 
 
@@ -105,7 +116,7 @@ def plot_words(word1, words, fitted, cmap, sims):
         sizing = sims[words[i]] * 30
 
         # word1 is the word we are plotting against
-        if ww == word1:
+        if ww == word1 or (isArray and ww in word1):
             annotations.append((ww, decade, pt))
             word = decade
             color = 'black'
@@ -129,7 +140,3 @@ def plot_annotations(annotations):
 
 def savefig(name):
     plt.savefig(name, bbox_inches=0)
-
-
-def get_now():
-    return int(time.time() * 1000)
