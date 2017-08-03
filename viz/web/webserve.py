@@ -63,10 +63,14 @@ def restart():
     start()
 
 
-if __name__ == '__main__':
+def main():
     t = start()
     import helpers
-    helpers.load_embeddings()
+
+    # TODO: add argument parsing with argparse
+
+    helpers.select_embedding()
+
 
     while True:
         t.join(0.5)
@@ -74,3 +78,7 @@ if __name__ == '__main__':
         if not t.isAlive():
             print "WEBSERVER DIED, EXITING"
             break
+
+if __name__ == '__main__':
+    main()
+

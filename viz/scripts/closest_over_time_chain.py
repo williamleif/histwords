@@ -45,6 +45,6 @@ if __name__ == "__main__":
     if annotations:
         helpers.plot_annotations(annotations)
 
-    helpers.savefig("viz/output/%s_chain.png" % wordchain)
+    helpers.savefig("%s_chain.png" % wordchain)
 
 

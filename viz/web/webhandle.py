@@ -68,7 +68,7 @@ def do_search(word1):
         embeddings = helpers.load_embeddings()
         words = word1.split(":")
         all_lookups = {}
-        all_sims = {}
+        all_sims = defaultdict(list)
         all_terms = defaultdict(list)
         for word2 in words:
             if not word2 in term_cache:
@@ -81,8 +81,10 @@ def do_search(word1):
             for word in lookups:
                 all_terms[word].append(word2)
 
+            for word in lookups:
+                all_sims[word].append(sims[word])
+
             all_lookups.update(lookups)
-            all_sims.update(sims)
 
         words = all_lookups.keys()
         values = [ all_lookups[word] for word in words ]
@@ -99,6 +101,8 @@ def do_search(word1):
                 "query" : all_terms[word],
                 "year" : int(decade),
                 "similarity" : all_sims[word],
+                "avg_similarity" : sum(all_sims[word]) / len(all_sims[word]),
+                "sum_similarity" : sum(all_sims[word]),
                 "position" : {
                     "x" : round(fitted[i][0], 3),
                     "y" : round(fitted[i][1], 3)
@@ -141,8 +145,6 @@ def do_get(handler):
                 ret = do_search(term)
             msg_dict.update(ret)
 
-
-
         write_response(handler, 200, ['Content-type: text/json'], json.dumps(msg_dict))
 
 
@@ -156,13 +158,7 @@ def do_post(handler):
 
     if parts.path == '/r/':
         cmd = get_value(query, "cmd")
-        orig = get_value(query, "from", None)
-        room = get_value(query, "room", orig)
-        msg = None
-        if cmd == "foo":
-            pass
-        elif cmd == "bar":
-            pass
+
     else:
         debug("UNKNOWN URL", parts.path)
 
