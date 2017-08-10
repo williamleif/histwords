@@ -148,6 +148,12 @@ td.compare span.similarity {
   border-bottom: 2px solid gray;
 }
 
+.breadcrumbs {
+  max-height: 45px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .breadcrumb {
   display: inline-block;
   padding: 10px;
@@ -188,11 +194,13 @@ td.compare span.similarity {
     -ms-transition: all, .2s;
     -o-transition: all, .2s;
   position: absolute;
+  color: #111;
   text-aign: center;
   font-size: 14px;
+  line-height: 1.75em;
   width: inherit;
-  padding: 5px;
-  background: lightsteelblue;
+  padding: 5px 10px;
+  background: #eee;
   pointer-events:none;
   border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -202,7 +210,7 @@ td.compare span.similarity {
 }
 
 .tooltip p {
-  line-height: 1.2em;
+  line-height: 1.75em;
   margin: 0;
 }
 
@@ -223,12 +231,12 @@ svg text {
 /* LOADING */
 /* TODO update this to something nicer */
 .loadingcube {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
+  width: 10%;
+  height: 20%;
+  background-color: #eee;
   position: absolute;
-  left: 50%;
-  top: 30%;
+  left: 40%;
+  top: 250%;
   transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -253,7 +261,7 @@ svg text {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   } 100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
   }
 }
 
