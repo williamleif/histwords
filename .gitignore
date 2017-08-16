@@ -136,3 +136,6 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# virtualenv
+histwords/

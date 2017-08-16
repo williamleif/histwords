@@ -1,0 +1,267 @@
+/* NO HIGHLIGHTING */
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome and Opera */
+}
+
+/* SCROLLBAR RESET */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* HEADER */
+.inputbox {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+}
+
+.inputbox:focus {
+  border: 2px solid #ccc;
+}
+
+.header {
+  padding: 10px 5%;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255,255,255,.95);
+}
+
+body {
+  margin: 0px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 90%;
+  padding-top: 20px;
+  margin: auto;
+  overflow-x: auto;
+}
+
+/* TODO: TABLE CSS NEEDS TO BE SCOPED AND CLEANED UP */
+table.flex {
+  display: flex;
+}
+.flex-col {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  font-weight: 400;
+}
+th {
+  font-weight: 500;
+}
+
+td {
+  cursor: pointer;
+
+}
+
+tr:nth-child(2n) {
+  background: #fafafa;
+}
+tr:nth-child(2n+1) {
+  background: #efefef;
+}
+td span.similarity {
+  font-size: .75em;
+  line-height: 1.2em;
+  font-weight: 200;
+  color: rgba(0,0,0,.5);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  max-height: 1.2em;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+td.compare {
+  /*background: #DE96BD !important;*/
+  background: #999 !important;
+  color: #fff !important;
+}
+td.selected {
+  /*background: #98DE96 !important;*/
+  background: #666 !important;
+  color: #fff !important;
+}
+td.selected span.similarity,
+td.compare span.similarity {
+  color: rgba(255,255,255,.5);
+}
+/* VIEW TABS */
+
+.viewtab_box {
+  font-size: 20px;
+  float: left;
+}
+
+.viewtab {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+  border-bottom: 2px solid white;
+}
+
+.viewtab:hover {
+  border-bottom: 2px solid lightgray;
+}
+
+.viewtab.active {
+  border-bottom: 2px solid gray;
+}
+
+.breadcrumbs {
+  max-height: 45px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.breadcrumb {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: lightgray;
+}
+
+.breadcrumb:hover {
+  background-color: gray;
+}
+
+.breadcrumb.active {
+  background-color: lightgreen;
+
+}
+
+.viewtab {
+  width: 80px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.controls {
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* TOOLTIP */
+
+.tooltip {
+  transition: all, .2s;
+    -webkit-transition: all, .2s;
+    -moz-transition: all, .2s;
+    -ms-transition: all, .2s;
+    -o-transition: all, .2s;
+  position: absolute;
+  color: #111;
+  text-aign: center;
+  font-size: 14px;
+  line-height: 1.75em;
+  width: inherit;
+  padding: 5px 10px;
+  background: #eee;
+  pointer-events:none;
+  border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tooltip p {
+  line-height: 1.75em;
+  margin: 0;
+}
+
+.tooltip p:first-child {
+  border-bottom: 1px solid rgba(0,0,0,.25);
+}
+/* SVG */
+svg text {
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* LOADING */
+/* TODO update this to something nicer */
+.loadingcube {
+  width: 10%;
+  height: 20%;
+  background-color: #eee;
+  position: absolute;
+  left: 40%;
+  top: 250%;
+  transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+}
+
