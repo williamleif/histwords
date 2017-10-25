@@ -7,7 +7,9 @@ from argparse import ArgumentParser
 
 from coha.cohastringutils import process_lemma_line
 from ioutils import load_pickle, mkdir
-from cooccurrence.matstore import export_mat_from_dict
+import pyximport
+pyximport.install(setup_args={"include_dirs": np.get_include()})
+from representations.sparse_io import export_mat_from_dict
 
 DATA = "/dfs/scratch0/COHA/COHA_word_lemma_pos/"
 DICT = "/dfs/scratch0/COHA/info/{type}-dict.pkl"
